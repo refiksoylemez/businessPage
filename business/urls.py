@@ -23,9 +23,11 @@ from django.urls import include
 from django.contrib.auth import views as authViews
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls.i18n import i18n_patterns
+from django.utils.translation import gettext_lazy as _
 
-urlpatterns = [
+urlpatterns = i18n_patterns(
                   path('admin/', admin.site.urls),
-
-              ] + static(settings.STATIC_URL, document_root=settings.STATIC_URL) + static(settings.MEDIA_URL,
+                  path(_('rosetta/'), include('rosetta.urls')),
+) + static(settings.STATIC_URL, document_root=settings.STATIC_URL) + static(settings.MEDIA_URL,
                                                                                           document_root=settings.MEDIA_ROOT)
