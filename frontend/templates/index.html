@@ -11,11 +11,12 @@
             <div class="promo-slider">
                 <div class="promo-slider__item">
                     <div class="promo-slider__layout"></div>
-                    <picture>
-                        <source srcset="img/promo_1.jpg" media="(min-width: 992px)"/>
-                        <img class="img--bg" src="img/promo_1.jpg" alt="img"/>
-                    </picture>
-                    <div class="align-container">
+                    <video playsinline="playsinline" height="70%" autoplay="autoplay" muted="muted" loop="loop">
+                        <source src="{% static 'img/hero_video_filter1_2.mp4' %}" type="video/mp4"
+                                media="(min-width: 992px)">
+                    </video>
+
+                    <div class="align-container" style="margin-top: -992px;">
                         <div class="align-container__item">
                             <div class="container">
                                 <div class="row">
@@ -45,97 +46,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="promo-slider__item text-center">
-                    <div class="promo-slider__layout"></div>
-                    <picture>
-                        <source srcset="img/promo_2.jpg" media="(min-width: 992px)"/>
-                        <img class="img--bg" src="img/promo_2.jpg" alt="img"/>
-                    </picture>
-                    <div class="align-container">
-                        <div class="align-container__item">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="promo-slider__wrapper-1"><span
-                                                class="promo-slider__overlay position-center">TransX</span>
-                                            <h2 class="promo-slider__title">Worldwide Shipping</h2>
-                                        </div>
-                                        <div class="promo-slider__wrapper-2">
-                                            <p class="promo-slider__subtitle">Roach yellowfin cutthroat trout zebra
-                                                pleco ocean sunfish temperate bass pikehead elephant fish. Long-finned
-                                                char northern pike bluegill temperate. Leopard danio píntano
-                                                bonnetmouth; blue whiting, suckermouth armored catfish luderick
-                                                blackchin kingfish.</p>
-                                        </div>
-                                        <div class="promo-slider__wrapper-3"><a class="button button--promo"
-                                                                                href="#"><span>Explore more</span>
-                                            <svg class="icon">
-                                                <use xlink:href="#arrow"></use>
-                                            </svg>
-                                        </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="promo-slider__item">
-                    <div class="promo-slider__layout"></div>
-                    <picture>
-                        <source srcset="img/promo_3.jpg" media="(min-width: 992px)"/>
-                        <img class="img--bg" src="img/promo_3.jpg" alt="img"/>
-                    </picture>
-                    <div class="align-container">
-                        <div class="align-container__item">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-9 col-xl-7">
-                                        <div class="promo-slider__wrapper-1"><span
-                                                class="promo-slider__overlay">TransX</span>
-                                            <h2 class="promo-slider__title">Deliver Packages <br/>in any Way</h2>
-                                        </div>
-                                        <div class="promo-slider__wrapper-2">
-                                            <p class="promo-slider__subtitle">Rockling Devario deep sea bonefish
-                                                cutthroat trout streamer fish kaluga sailback scorpionfish sand dab,
-                                                turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth;
-                                                blue whiting, suckermouth armored catfish luderick blackchin
-                                                kingfish.</p>
-                                        </div>
-                                        <div class="promo-slider__wrapper-3"><a class="button button--promo"
-                                                                                href="#"><span>Explore more</span>
-                                            <svg class="icon">
-                                                <use xlink:href="#arrow"></use>
-                                            </svg>
-                                        </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
             <div class="promo__lower">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-5 col-lg-7 col-xl-8 d-flex align-items-start">
                             <div class="promo-slider__nav"></div>
-                            <div class="promo-slider__count"></div>
+
                         </div>
-                        <div class="col-md-7 col-lg-5 col-xl-4 top-20 top-md-0">
-                            <form class="tracking-form" action="javascript:void(0);" autocomplete="off">
-                                <label class="tracking-form__label">
-                                    <input class="tracking-form__input" type="text" name="tracking"
-                                           required="required"/><span class="tracking-form__placeholder">Track your shippment</span>
-                                </label>
-                                <button class="tracking-form__submit" type="submit">
-                                    <svg class="icon">
-                                        <use xlink:href="#arrow"></use>
-                                    </svg>
-                                </button>
-                            </form>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -146,59 +66,56 @@
             <div class="container">
                 <div class="row bottom-70">
                     <div class="col-lg-4">
-                        <div class="heading bottom-40"><span class="heading__pre-title">Services</span>
-                            <h3 class="heading__title">Transporterium Services</h3><span class="heading__layout">Services</span>
+                        <div class="heading bottom-40"><span class="heading__pre-title">{% trans "Hizmetlerimiz" %}</span>
+                            <h3 class="heading__title">{% trans "GFT Logistics" %}</h3><span class="heading__layout">{% trans "Hizmetleri" %}</span>
                         </div>
-                        <a class="button button--green d-none d-lg-inline-block" href="#"><span>All services</span>
+                        <a class="button button--green d-none d-lg-inline-block" href="#"><span>{% trans "Tüm Hizmetler" %}</span>
                             <svg class="icon">
                                 <use xlink:href="#arrow"></use>
                             </svg>
                         </a>
                     </div>
                     <div class="col-lg-8">
-                        <p><strong>Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback
-                            scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano
-                            bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin kingfish.
-                            Midshipman, lightfish longfin smelt pickerel houndshark whipt.</strong></p>
-                        <p class="bottom-0">Pacific hake false trevally queen parrotfish Black prickleback
-                            humuhumunukunukuapua'a mosshead warbonnet sweeper! Greenling sleeper; Owens pupfish
-                            large-eye bream kokanee sprat shrimpfish grunter, Ratfish combtooth blenny, bigeye
-                            squaretail nurseryfish yellowtail barracuda. Halibut: mosshead warbonnet sweeper! Greenling
-                            sleeper;</p>
+                        <p><strong>{% blocktranslate %}Onlarca yılın getirmiş olduğu deneyimimiz, sektöre olan tutkumuz ve yenilikçi yaklaşım tarzımız ile kurulduğumuz günden itibaren portföyümüzdeki firmalara  hizmet sağlamaktan mutluluk duyuyoruz.{% endblocktranslate  %}</strong></p>
+                        <p class="bottom-0">{% blocktranslate %}Onlarca yılın getirmiş olduğu deneyimimiz, sektöre olan tutkumuz ve yenilikçi yaklaşım tarzımız ile kurulduğumuz günden itibaren portföyümüzdeki firmalara  hizmet sağlamaktan mutluluk duyuyoruz.{% endblocktranslate  %}</p>
                     </div>
                 </div>
                 <div class="row offset-50">
                     <div class="col-sm-6 col-xl-3">
                         <div class="count-item">
-                            <div class="count-item__img"><img src="img/front-serv_1.png" alt="icon"/></div>
+                            <div class="count-item__img"><img src="{% static 'img/front-serv_1.png' %}" alt="icon"/>
+                            </div>
                             <h6 class="count-item__title"><span class="count-item__count">01</span>
-                                <span>Truck Freight</span></h6>
+                                <span>{% trans "Denizyolu Taşımacılığı" %}</span></h6>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3">
                         <div class="count-item">
-                            <div class="count-item__img"><img src="img/front-serv_2.png" alt="icon"/></div>
-                            <h6 class="count-item__title"><span class="count-item__count">02</span> <span>Shipping Freight</span>
+                            <div class="count-item__img"><img src="{% static 'img/front-serv_2.png' %}" alt="icon"/>
+                            </div>
+                            <h6 class="count-item__title"><span class="count-item__count">02</span> <span>{% trans "Karayolu Taşımacılığı" %}</span>
                             </h6>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3">
                         <div class="count-item">
-                            <div class="count-item__img"><img src="img/front-serv_3.png" alt="icon"/></div>
+                            <div class="count-item__img"><img src="{% static 'img/front-serv_3.png' %}" alt="icon"/>
+                            </div>
                             <h6 class="count-item__title"><span class="count-item__count">03</span>
-                                <span>Plane Freight</span></h6>
+                                <span>{% trans "Havayolu Taşımacılığı" %}</span></h6>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3">
                         <div class="count-item">
-                            <div class="count-item__img"><img src="img/front-serv_4.png" alt="icon"/></div>
+                            <div class="count-item__img"><img src="{% static 'img/front-serv_4.png' %}" alt="icon"/>
+                            </div>
                             <h6 class="count-item__title"><span class="count-item__count">04</span>
-                                <span>Train Freight</span></h6>
+                                <span>{% trans "Demiryolu Taşımacılığı" %}</span></h6>
                         </div>
                     </div>
                 </div>
                 <div class="row top-70 d-flex d-lg-none">
-                    <div class="col-12 text-center"><a class="button button--green" href="#"><span>All services</span>
+                    <div class="col-12 text-center"><a class="button button--green" href="#"><span>{% trans "GFT Logistics" %}{% trans "Tüm Hizmetler" %}</span>
                         <svg class="icon">
                             <use xlink:href="#arrow"></use>
                         </svg>
@@ -209,13 +126,9 @@
         <!-- section end-->
         <!-- section start-->
         <section class="section front-about">
-            <div class="front-about__bg"><img class="section--bg t50 r0" src="img/testimonials-bg.png" alt="img"/></div>
-            <div class="front-about__img"><img class="img--bg" src="img/about_img.jpg" alt="img"/><a
-                    class="js-video front-about__video" href="https://www.youtube.com/watch?v=hSbVJ4y6I-8">
-                <svg class="icon">
-                    <use xlink:href="#play"></use>
-                </svg>
-                <span>Video presentation</span></a></div>
+            <div class="front-about__bg"><img class="section--bg t50 r0" src="{% static 'img/testimonials-bg.png' %}"
+                                              alt="img"/></div>
+            <div class="front-about__img"><img class="img--bg" src="{% static 'img/about_img.jpg' %}" alt="img"/> </div>
             <div class="container">
                 <div class="row">
                     <div class="col-xl-4 offset-xl-1 d-none d-xl-flex offset-50">
@@ -314,7 +227,7 @@
         <section class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-12"><img src="img/map-transx.png" alt="img"/></div>
+                    <div class="col-12"><img src="{% static 'img/map-transx.png' %}" alt="img"/></div>
                 </div>
                 <div class="row offset-50">
                     <div class="col-md-6 col-lg-4 text-center">
@@ -345,7 +258,7 @@
         <!-- section end-->
         <!-- section start-->
         <section class="section qoute-section bg--lgray pb-0">
-            <div class="quote-section__bg"><img class="img--bg" src="img/quote-bg.jpg" alt="bg"/></div>
+            <div class="quote-section__bg"><img class="img--bg" src="{% static 'img/quote-bg.jpg' %}" alt="bg"/></div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 d-flex flex-column justify-content-between">
@@ -357,7 +270,8 @@
                                 diver.</p>
                         </div>
                         <div class="contact-trigger top-50 top-lg-0"><img class="contact-trigger__img"
-                                                                          src="img/contact_background.png" alt="img"/>
+                                                                          src="{% static 'img/contact_background.png' %}"
+                                                                          alt="img"/>
                             <h4 class="contact-trigger__title">How we can help you!</h4><a class="button button--white"
                                                                                            href="#"><span>Contact us</span>
                                 <svg class="icon">
@@ -525,7 +439,7 @@
                     </div>
                     <div class="col-sm-9 col-md-6 col-xl-3">
                         <div class="pricing-plan pricing-plan--blue pricing-plan--small"><img class="pricing-plan__bg"
-                                                                                              src="img/price_background.png"
+                                                                                              src="{% static 'img/price_background.png' %}"
                                                                                               alt="img"/>
                             <div class="pricing-plan__inner">
                                 <h5 class="pricing-plan__title">Premium pack</h5>
@@ -571,37 +485,53 @@
             </div>
             <div class="gallery">
                 <div class="row no-gutters">
-                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item" href="img/gallery_1.jpg"
+                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item"
+                                                               href="{% static 'img/gallery_1.jpg' %}"
                                                                data-fancybox="gallery"><span class="overlay"></span><img
-                            class="img--bg" src="img/gallery_1.jpg" alt="img"/><span class="gallery__description">Sea port</span></a>
+                            class="img--bg" src="{% static 'img/gallery_1.jpg' %}" alt="img"/><span
+                            class="gallery__description">Sea port</span></a>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item" href="img/gallery_2.jpg"
+                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item"
+                                                               href="{% static 'img/gallery_2.jpg' %}"
                                                                data-fancybox="gallery"><span class="overlay"></span><img
-                            class="img--bg" src="img/gallery_2.jpg" alt="img"/><span class="gallery__description">Sea port</span></a>
+                            class="img--bg" src="{% static 'img/gallery_2.jpg' %}" alt="img"/><span
+                            class="gallery__description">Sea port</span></a>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item" href="img/gallery_3.jpg"
+                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item"
+                                                               href="{% static 'img/gallery_3.jpg' %}"
                                                                data-fancybox="gallery"><span class="overlay"></span><img
-                            class="img--bg" src="img/gallery_3.jpg" alt="img"/><span class="gallery__description">Sea port</span></a>
+                            class="img--bg" src="{% static 'img/gallery_3.jpg' %}" alt="img"/><span
+                            class="gallery__description">Sea port</span></a>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item" href="img/gallery_4.jpg"
+                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item"
+                                                               href="{% static 'img/gallery_4.jpg' %}"
                                                                data-fancybox="gallery"><span class="overlay"></span><img
-                            class="img--bg" src="img/gallery_4.jpg" alt="img"/><span class="gallery__description">Sea port</span></a>
+                            class="img--bg" src="{% static 'img/gallery_4.jpg' %}" alt="img"/><span
+                            class="gallery__description">Sea port</span></a>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item" href="img/gallery_5.jpg"
+                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item"
+                                                               href="{% static 'img/gallery_5.jpg' %}"
                                                                data-fancybox="gallery"><span class="overlay"></span><img
-                            class="img--bg" src="img/gallery_5.jpg" alt="img"/><span class="gallery__description">Sea port</span></a>
+                            class="img--bg" src="{% static 'img/gallery_5.jpg' %}" alt="img"/><span
+                            class="gallery__description">Sea port</span></a>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item" href="img/gallery_6.jpg"
+                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item"
+                                                               href="{% static 'img/gallery_6.jpg' %}"
                                                                data-fancybox="gallery"><span class="overlay"></span><img
-                            class="img--bg" src="img/gallery_6.jpg" alt="img"/><span class="gallery__description">Sea port</span></a>
+                            class="img--bg" src="{% static 'img/gallery_6.jpg' %}" alt="img"/><span
+                            class="gallery__description">Sea port</span></a>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item" href="img/gallery_7.jpg"
+                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item"
+                                                               href="{% static 'img/gallery_7.jpg' %}"
                                                                data-fancybox="gallery"><span class="overlay"></span><img
-                            class="img--bg" src="img/gallery_7.jpg" alt="img"/><span class="gallery__description">Sea port</span></a>
+                            class="img--bg" src="{% static 'img/gallery_7.jpg' %}" alt="img"/><span
+                            class="gallery__description">Sea port</span></a>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item" href="img/gallery_8.jpg"
+                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item"
+                                                               href="{% static 'img/gallery_8.jpg' %}"
                                                                data-fancybox="gallery"><span class="overlay"></span><img
-                            class="img--bg" src="img/gallery_8.jpg" alt="img"/><span class="gallery__description">Sea port</span></a>
+                            class="img--bg" src="{% static 'img/gallery_8.jpg' %}" alt="img"/><span
+                            class="gallery__description">Sea port</span></a>
                     </div>
                 </div>
                 <div class="row top-50 d-block d-lg-none">
@@ -618,7 +548,8 @@
         <!-- section end-->
         <!-- section start-->
         <section class="section testimonials bg--lgray">
-            <div class="testimonials__bg"><img class="section--bg t50 r0" src="img/testimonials-bg.png" alt="img"/>
+            <div class="testimonials__bg"><img class="section--bg t50 r0" src="{% static 'img/testimonials-bg.png' %}"
+                                               alt="img"/>
             </div>
             <div class="container">
                 <div class="row">
@@ -628,7 +559,7 @@
                                 services</h3><span class="heading__layout layout--dgray">People</span>
                         </div>
                         <div class="testimonials__nav"></div>
-                        <img class="testimonials__img" src="img/testimonials_img.png" alt="img"/>
+                        <img class="testimonials__img" src="{% static 'img/testimonials_img.png' %}" alt="img"/>
                     </div>
                     <div class="col-lg-6 offset-lg-1">
                         <div class="testimonials-slider">
@@ -641,7 +572,8 @@
                                     archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish
                                     Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda.
                                     Halibut: Blacksmelt”</p>
-                                <div class="testimonials-slider__author"><img src="img/quotes.png" alt="img"/>
+                                <div class="testimonials-slider__author"><img src="{% static 'img/quotes.png' %}"
+                                                                              alt="img"/>
                                     <h6>Well Singer</h6><span>Manager of Westwood</span>
                                 </div>
                             </div>
@@ -654,7 +586,8 @@
                                     archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish
                                     Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda.
                                     Halibut: Blacksmelt”</p>
-                                <div class="testimonials-slider__author"><img src="img/quotes.png" alt="img"/>
+                                <div class="testimonials-slider__author"><img src="{% static 'img/quotes.png' %}"
+                                                                              alt="img"/>
                                     <h6>Well Singer</h6><span>Manager of Westwood</span>
                                 </div>
                             </div>
@@ -667,7 +600,8 @@
                                     archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish
                                     Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda.
                                     Halibut: Blacksmelt”</p>
-                                <div class="testimonials-slider__author"><img src="img/quotes.png" alt="img"/>
+                                <div class="testimonials-slider__author"><img src="{% static 'img/quotes.png' %}"
+                                                                              alt="img"/>
                                     <h6>Well Singer</h6><span>Manager of Westwood</span>
                                 </div>
                             </div>
@@ -698,7 +632,8 @@
                             <div class="articles-slider">
                                 <div class="articles-slider__item">
                                     <div class="article">
-                                        <div class="article__img"><img class="img--bg" src="img/bl_1.jpg" alt="img"/>
+                                        <div class="article__img"><img class="img--bg" src="{% static 'img/bl_1.jpg' %}"
+                                                                       alt="img"/>
                                         </div>
                                         <div class="article__lower">
                                             <h6 class="article__title"><a href="#">What is 3D printing ?</a></h6>
@@ -712,7 +647,8 @@
                                 </div>
                                 <div class="articles-slider__item">
                                     <div class="article">
-                                        <div class="article__img"><img class="img--bg" src="img/article_2.jpg"
+                                        <div class="article__img"><img class="img--bg"
+                                                                       src="{% static 'img/article_2.jpg' %}"
                                                                        alt="img"/></div>
                                         <div class="article__lower">
                                             <h6 class="article__title"><a href="#">New subway line</a></h6>
@@ -726,7 +662,8 @@
                                 </div>
                                 <div class="articles-slider__item">
                                     <div class="article">
-                                        <div class="article__img"><img class="img--bg" src="img/article_3.jpg"
+                                        <div class="article__img"><img class="img--bg"
+                                                                       src="{% static 'img/article_3.jpg' %}"
                                                                        alt="img"/></div>
                                         <div class="article__lower">
                                             <h6 class="article__title"><a href="#">Importers achieve cost savings</a>
@@ -741,7 +678,8 @@
                                 </div>
                                 <div class="articles-slider__item">
                                     <div class="article">
-                                        <div class="article__img"><img class="img--bg" src="img/article_2.jpg"
+                                        <div class="article__img"><img class="img--bg"
+                                                                       src="{% static 'img/article_2.jpg' %}"
                                                                        alt="img"/></div>
                                         <div class="article__lower">
                                             <h6 class="article__title"><a href="#">What is 3D printing ?</a></h6>
@@ -784,10 +722,10 @@
                     <div class="col-12">
                         <!-- logos slider start-->
                         <div class="logos-slider">
-                            <div class="logos-slider__item"><img src="img/logo_1.png" alt="logo"/></div>
-                            <div class="logos-slider__item"><img src="img/logo_2.png" alt="logo"/></div>
-                            <div class="logos-slider__item"><img src="img/logo_3.png" alt="logo"/></div>
-                            <div class="logos-slider__item"><img src="img/logo_4.png" alt="logo"/></div>
+                            <div class="logos-slider__item"><img src="{% static 'img/logo_1.png' %}" alt="logo"/></div>
+                            <div class="logos-slider__item"><img src="{% static 'img/logo_2.png' %}" alt="logo"/></div>
+                            <div class="logos-slider__item"><img src="{% static 'img/logo_3.png' %}" alt="logo"/></div>
+                            <div class="logos-slider__item"><img src="{% static 'img/logo_4.png' %}" alt="logo"/></div>
                         </div>
                         <div class="logos-slider__dots"></div>
                         <!-- logos slider end-->
@@ -797,7 +735,7 @@
         </section>
         <!-- section end-->
         <!-- section start-->
-        <section class="section"><img class="img--bg" src="img/action-bg.jpg" alt="bg"/>
+        <section class="section"><img class="img--bg" src="{% static 'img/action-bg.jpg' %}" alt="bg"/>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-xl-6">

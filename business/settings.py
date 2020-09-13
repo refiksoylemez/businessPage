@@ -56,6 +56,8 @@ MIDDLEWARE = [
     'django.middleware.locale.LocaleMiddleware',
     'django_currentuser.middleware.ThreadLocalUserMiddleware',
     'django.contrib.sites.middleware.CurrentSiteMiddleware',
+
+
 ]
 
 ROOT_URLCONF = 'business.urls'
