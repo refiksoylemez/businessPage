@@ -128,28 +128,30 @@
         <section class="section front-about">
             <div class="front-about__bg"><img class="section--bg t50 r0" src="{% static 'img/testimonials-bg.png' %}"
                                               alt="img"/></div>
-            <div class="front-about__img"><img class="img--bg" src="{% static 'img/about_img.jpg' %}" alt="img"/> </div>
+            <div class="front-about__img"><img class="img--bg" src="{% static 'img/about_img.jpg' %}" alt="img"/></div>
             <div class="container">
                 <div class="row">
                     <div class="col-xl-4 offset-xl-1 d-none d-xl-flex offset-50">
                         <div class="counter counter--filled">
-                            <div class="counter__top"><span class="js-counter counter__count">20</span><span
-                                    class="counter__subject">years</span></div>
+                            <div class="counter__top"><span
+                                    class="js-counter counter__count">{% trans "" %}{% trans "100" %}</span><span
+                                    class="counter__subject">{% trans "" %}{% trans "'lerce" %}</span></div>
                             <div class="counter__lower"><span
-                                    class="counter__details">Experience in transportation</span></div>
+                                    class="counter__details">{% trans "" %}{% trans "Lokasyon" %}</span></div>
                         </div>
                     </div>
                     <div class="col-xl-7">
-                        <div class="heading heading--white"><span class="heading__pre-title">About transx</span>
-                            <h3 class="heading__title">Transporterium is the biggest <span class="color--green">transportation</span>
-                                company</h3>
+                        <div class="heading heading--white"><span
+                                class="heading__pre-title">{% trans "GFT Logistics Hakkında" %}</span>
+                            <h3 class="heading__title"> {% trans "Ticaretin merkezi olan" %} <span
+                                    class="color--green">{% trans "İstanbul" %}</span>{% trans "’da kurulduk." %}</h3>
                         </div>
-                        <p>Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback scorpionfish
-                            sand dab, turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth; blue
-                            whiting, suckermouth armored catfish luderick blackchin kingfish. </p>
-                        <p>Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda archerfish
-                            slimehead broadband dogfish, Pacific hake false trevally queen parrotfish Black</p><a
-                            class="button button--white" href="#"><span>More about</span>
+                        <p>{% blocktranslate %}Deneyimli kadromuz ve dünya çapında acente ağlarımızla kara, deniz, hava
+                            ve demiryolu taşımacılığında sınırları aşan hizmetler veriyoruz. {% endblocktranslate %}</p>
+                        <p>{% blocktranslate %}Ekonominin lokomotif unsurlarından olan ithalat ve ihracat yapan firmalar
+                            için ürün tedarik süreçlerini ve depolama hizmetlerini de kapsayan katma değerli çözümler
+                            sunuyoruz.{% endblocktranslate %}</p><a
+                            class="button button--white" href="#"><span>{% trans "Daha Fazla" %}</span>
                         <svg class="icon">
                             <use xlink:href="#arrow"></use>
                         </svg>
@@ -164,59 +166,78 @@
             <div class="container">
                 <div class="row align-items-end bottom-70">
                     <div class="col-lg-5 col-xl-4">
-                        <div class="heading"><span class="heading__pre-title">Features</span>
-                            <h3 class="heading__title">Powerfull Features of <span class="color--green">TransX</span>
-                                company</h3><span class="heading__layout layout--lgray">Features</span>
+                        <div class="heading"><span class="heading__pre-title">{% trans "GFT Logistics" %}</span>
+                            <h3 class="heading__title">{% trans "Güçlü " %} <span
+                                    class="color--green">{% trans "Özelliklerimiz" %}</span>
+                            </h3><span class="heading__layout layout--lgray">{% trans "Özelliklerimiz" %}</span>
                         </div>
                     </div>
                 </div>
                 <div class="row offset-50">
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-3 col-lg-4">
                         <div class="icon-item">
-                            <div class="icon-item__img">
+                            <div class="icon-item__img ">
                                 <svg class="icon">
                                     <use xlink:href="#warehouse"></use>
                                 </svg>
                             </div>
-                            <h6 class="icon-item__title">Warehouse</h6>
-                            <p class="icon-item__text">Kokanee sprat shrimpfish. Pacific hake false trevally queen
-                                parrotfish Black prickleback</p>
+                            <h6 class="icon-item__title">{% trans "" %}{% trans "Geniş Acente Ağı" %} </h6>
+
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-3 col-lg-4">
                         <div class="icon-item">
                             <div class="icon-item__img">
                                 <svg class="icon">
                                     <use xlink:href="#support"></use>
                                 </svg>
                             </div>
-                            <h6 class="icon-item__title">Support 24/7</h6>
-                            <p class="icon-item__text">Greenling sleeper; Owens pupfish large-eye bream kokanee sprat
-                                shrimpfish. Pacific hake false </p>
+                            <h6 class="icon-item__title">{% trans "Deneyimli Ekipler" %}</h6>
+
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-3 col-lg-4">
                         <div class="icon-item">
                             <div class="icon-item__img">
                                 <svg class="icon">
                                     <use xlink:href="#location"></use>
                                 </svg>
                             </div>
-                            <h6 class="icon-item__title">Online Tracking</h6>
-                            <p class="icon-item__text">Mosshead warbonnet sweeper! Greenling sleeper; Owens pupfish
-                                large-eye bream kokanee sprat </p>
+                            <h6 class="icon-item__title">{% trans "Entegre Hizmet" %}</h6>
+
                         </div>
                     </div>
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-3 col-lg-4">
                         <div class="icon-item">
                             <div class="icon-item__img">
                                 <svg class="icon">
                                     <use xlink:href="#insurance"></use>
                                 </svg>
                             </div>
-                            <h6 class="icon-item__title">Cargo Insurance</h6>
-                            <p class="icon-item__text">Pacific hake false trevally queen parrotfish Black prickleback
-                                humuhumunukunukuapua'a</p>
+                            <h6 class="icon-item__title">{% trans "Deneyimli Ekipler" %}</h6>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-4">
+                        <div class="icon-item">
+                            <div class="icon-item__img">
+                                <svg class="icon">
+                                    <use xlink:href="#insurance"></use>
+                                </svg>
+                            </div>
+                            <h6 class="icon-item__title">{% trans "Müşteri Desteği" %}</h6>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-4">
+                        <div class="icon-item">
+                            <div class="icon-item__img">
+                                <svg class="icon">
+                                    <use xlink:href="#insurance"></use>
+                                </svg>
+                            </div>
+                            <h6 class="icon-item__title">{% trans "Müşteri Memnuniyeti" %}</h6>
+
                         </div>
                     </div>
                 </div>
@@ -232,508 +253,30 @@
                 <div class="row offset-50">
                     <div class="col-md-6 col-lg-4 text-center">
                         <div class="counter counter--blue">
-                            <div class="counter__top"><span class="js-counter counter__count">5</span><span
-                                    class="counter__subject">millions</span></div>
-                            <div class="counter__lower"><span class="counter__details">Delivered packeges</span></div>
+                            <div class="counter__top"><span class="js-counter counter__count">{% trans "8" %}</span><span
+                                    class="counter__subject">{% trans "Özellik" %}</span></div>
+                            <div class="counter__lower"><span class="counter__details">{% trans "Güçlü Operasyonlar İçin" %}</span></div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 text-center">
                         <div class="counter counter--blue">
-                            <div class="counter__top"><span class="js-counter counter__count">2</span><span
-                                    class="counter__subject">million</span></div>
+                            <div class="counter__top"><span class="js-counter counter__count">{% trans "6" %}</span><span
+                                    class="counter__subject">{% trans "Değer" %}</span></div>
                             <div class="counter__lower"><span
-                                    class="counter__details">Miles driven each of the year</span></div>
+                                    class="counter__details">{% trans "En İyi Olmak İçin" %}</span></div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 text-center">
                         <div class="counter counter--blue">
-                            <div class="counter__top"><span class="js-counter counter__count">50</span><span
-                                    class="counter__subject">years</span></div>
-                            <div class="counter__lower"><span class="counter__details">Total warehouse area</span></div>
+                            <div class="counter__top"><span class="js-counter counter__count">{% trans "7" %}</span><span
+                                    class="counter__subject">{% trans "Hizmet" %}</span></div>
+                            <div class="counter__lower"><span class="counter__details">{% trans "Mutlu Müşteriler İçin" %}</span></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- section end-->
-        <!-- section start-->
-        <section class="section qoute-section bg--lgray pb-0">
-            <div class="quote-section__bg"><img class="img--bg" src="{% static 'img/quote-bg.jpg' %}" alt="bg"/></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 d-flex flex-column justify-content-between">
-                        <div class="heading heading--white"><span class="heading__pre-title">Quote</span>
-                            <h3 class="heading__title">Provide quick Tracking your cargo</h3><span
-                                    class="heading__layout layout--white">Quote</span>
-                            <p class="heading__text color--white">Rockling Devario deep sea bonefish cutthroat trout
-                                streamer fish kaluga sailback scorpionfish sand dab, turkeyfish golden loach sand
-                                diver.</p>
-                        </div>
-                        <div class="contact-trigger top-50 top-lg-0"><img class="contact-trigger__img"
-                                                                          src="{% static 'img/contact_background.png' %}"
-                                                                          alt="img"/>
-                            <h4 class="contact-trigger__title">How we can help you!</h4><a class="button button--white"
-                                                                                           href="#"><span>Contact us</span>
-                                <svg class="icon">
-                                    <use xlink:href="#arrow"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 top-50 top-lg-0">
-                        <div class="form-wrapper">
-                            <form class="form quote-form" action="javascript:void(0);">
-                                <h6 class="quote-form__title">Request a quote</h6>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <input class="form__field" type="text" name="name" placeholder="Full name"/>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input class="form__field" type="email" name="email" placeholder="Email"/>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input class="form__field" type="tel" name="phone-number" placeholder="Phone"/>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input class="form__field" type="text" name="subject" placeholder="Subject"/>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input class="form__field" type="text" name="delivery"
-                                               placeholder="Delivery city"/>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input class="form__field" type="text" name="departure"
-                                               placeholder="City of departure"/>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <select class="form__select" name="freight">
-                                            <option data-display="Freight type">Freight type</option>
-                                            <option value="value">Value 1</option>
-                                            <option value="value2">Value 2</option>
-                                            <option value="value3">Value 3</option>
-                                            <option value="value3">Value 4</option>
-                                            <option value="value3">Value 5</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <select class="form__select" name="incoterms">
-                                            <option data-display="Incoterms">Incoterms</option>
-                                            <option value="value">Value 1</option>
-                                            <option value="value2">Value 2</option>
-                                            <option value="value3">Value 3</option>
-                                            <option value="value3">Value 4</option>
-                                            <option value="value3">Value 5</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-6 col-sm-3">
-                                        <input class="form__field" type="number" name="weight" placeholder="Weight"/>
-                                    </div>
-                                    <div class="col-6 col-sm-3">
-                                        <input class="form__field" type="number" name="height" placeholder="Height"/>
-                                    </div>
-                                    <div class="col-6 col-sm-3">
-                                        <input class="form__field" type="number" name="width" placeholder="Width"/>
-                                    </div>
-                                    <div class="col-6 col-sm-3">
-                                        <input class="form__field" type="number" name="lenght" placeholder="Lenght"/>
-                                    </div>
-                                    <div class="col-12 offset-20">
-                                        <label class="form__checkbox-label bottom-20"><span class="form__label-text">Fragile</span>
-                                            <input class="form__input-checkbox" type="checkbox" name="size-select"
-                                                   value="Size L"/><span class="form__checkbox-mask"></span>
-                                        </label>
-                                        <label class="form__checkbox-label bottom-20"><span class="form__label-text">Express delivery</span>
-                                            <input class="form__input-checkbox" type="checkbox" name="size-select"
-                                                   value="Size S"/><span class="form__checkbox-mask"></span>
-                                        </label>
-                                        <label class="form__radio-label bottom-20"><span class="form__label-text">Insurance</span>
-                                            <input class="form__input-radio" type="radio" name="option-select"
-                                                   value="option-3" checked="checked"/><span
-                                                    class="form__radio-mask"></span>
-                                        </label>
-                                        <label class="form__radio-label bottom-20"><span class="form__label-text">Packaging</span>
-                                            <input class="form__input-radio" type="radio" name="option-select"
-                                                   value="option-4"/><span class="form__radio-mask"></span>
-                                        </label>
-                                    </div>
-                                    <div class="col-12">
-                                        <button class="quote-form__submit" type="submit">Request a quote</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- section end-->
-        <!-- section start-->
-        <section class="section bg--lgray">
-            <div class="container">
-                <div class="row bottom-50">
-                    <div class="col-12">
-                        <div class="heading heading--center"><span class="heading__pre-title">Pricing</span>
-                            <h3 class="heading__title">The right price for you, <span
-                                    class="color--green">whoever</span> you are</h3><span
-                                    class="heading__layout layout--lgray">Pricing</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row offset-50">
-                    <div class="col-sm-9 col-md-6 col-xl-3">
-                        <div class="pricing-plan pricing-plan--bordered pricing-plan--small">
-                            <div class="pricing-plan__inner">
-                                <h5 class="pricing-plan__title">One pack</h5>
-                                <div class="pricing-plan__price"><span>95</span> <span>usd</span></div>
-                                <ul class="list list--check list--reset">
-                                    <li class="list__item">1 warehouse</li>
-                                    <li class="list__item">Custom business rules</li>
-                                    <li class="list__item item--disabled">Real-time rate shopping</li>
-                                    <li class="list__item item--disabled">100 freight shipments</li>
-                                </ul>
-                                <a class="button button--green" href="#"><span>Get started</span>
-                                    <svg class="icon">
-                                        <use xlink:href="#arrow"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-9 col-md-6 col-xl-3">
-                        <div class="pricing-plan pricing-plan--bordered pricing-plan--small">
-                            <div class="pricing-plan__inner">
-                                <h5 class="pricing-plan__title">Starter pack</h5>
-                                <div class="pricing-plan__price"><span>100</span> <span>usd</span></div>
-                                <ul class="list list--check list--reset">
-                                    <li class="list__item">1 warehouse</li>
-                                    <li class="list__item">Custom business rules</li>
-                                    <li class="list__item item--disabled">Real-time rate shopping</li>
-                                    <li class="list__item item--disabled">100 freight shipments</li>
-                                </ul>
-                                <a class="button button--green" href="#"><span>Get started</span>
-                                    <svg class="icon">
-                                        <use xlink:href="#arrow"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-9 col-md-6 col-xl-3">
-                        <div class="pricing-plan pricing-plan--bordered pricing-plan--small">
-                            <div class="pricing-plan__inner">
-                                <h5 class="pricing-plan__title">Regular <span class="color--green">pack</span></h5>
-                                <div class="pricing-plan__price"><span>150</span> <span>usd</span></div>
-                                <ul class="list list--check list--reset">
-                                    <li class="list__item">1 warehouse</li>
-                                    <li class="list__item">Custom business rules</li>
-                                    <li class="list__item">Real-time rate shopping</li>
-                                    <li class="list__item item--disabled">100 freight shipments</li>
-                                </ul>
-                                <a class="button button--green" href="#"><span>Get started</span>
-                                    <svg class="icon">
-                                        <use xlink:href="#arrow"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-9 col-md-6 col-xl-3">
-                        <div class="pricing-plan pricing-plan--blue pricing-plan--small"><img class="pricing-plan__bg"
-                                                                                              src="{% static 'img/price_background.png' %}"
-                                                                                              alt="img"/>
-                            <div class="pricing-plan__inner">
-                                <h5 class="pricing-plan__title">Premium pack</h5>
-                                <div class="pricing-plan__price"><span>255</span> <span>usd</span></div>
-                                <ul class="list list--check list--reset">
-                                    <li class="list__item">1 warehouse</li>
-                                    <li class="list__item">Custom business rules</li>
-                                    <li class="list__item">Real-time rate shopping</li>
-                                    <li class="list__item">100 freight shipments</li>
-                                </ul>
-                                <a class="button button--white" href="#"><span>Get started</span>
-                                    <svg class="icon">
-                                        <use xlink:href="#arrow"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- section end-->
-        <!-- section start-->
-        <section class="section front-gallery">
-            <div class="container">
-                <div class="row align-items-end bottom-60">
-                    <div class="col-lg-8">
-                        <div class="heading"><span class="heading__pre-title">Gallery</span>
-                            <h3 class="heading__title">Our stunning gallery</h3><span
-                                    class="heading__layout">Gallery</span>
-                            <p class="heading__text">Pacific hake false trevally queen parrotfish Black prickleback
-                                humuhumunukunukuapua'a mosshead warbonnet sweeper! Greenling sleeper; Owens pupfish
-                                large-eye bream kokanee sprat.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 text-right d-none d-lg-block"><a class="button button--green" href="#"><span>View all gallery</span>
-                        <svg class="icon">
-                            <use xlink:href="#arrow"></use>
-                        </svg>
-                    </a>
-                    </div>
-                </div>
-            </div>
-            <div class="gallery">
-                <div class="row no-gutters">
-                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item"
-                                                               href="{% static 'img/gallery_1.jpg' %}"
-                                                               data-fancybox="gallery"><span class="overlay"></span><img
-                            class="img--bg" src="{% static 'img/gallery_1.jpg' %}" alt="img"/><span
-                            class="gallery__description">Sea port</span></a>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item"
-                                                               href="{% static 'img/gallery_2.jpg' %}"
-                                                               data-fancybox="gallery"><span class="overlay"></span><img
-                            class="img--bg" src="{% static 'img/gallery_2.jpg' %}" alt="img"/><span
-                            class="gallery__description">Sea port</span></a>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item"
-                                                               href="{% static 'img/gallery_3.jpg' %}"
-                                                               data-fancybox="gallery"><span class="overlay"></span><img
-                            class="img--bg" src="{% static 'img/gallery_3.jpg' %}" alt="img"/><span
-                            class="gallery__description">Sea port</span></a>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item"
-                                                               href="{% static 'img/gallery_4.jpg' %}"
-                                                               data-fancybox="gallery"><span class="overlay"></span><img
-                            class="img--bg" src="{% static 'img/gallery_4.jpg' %}" alt="img"/><span
-                            class="gallery__description">Sea port</span></a>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item"
-                                                               href="{% static 'img/gallery_5.jpg' %}"
-                                                               data-fancybox="gallery"><span class="overlay"></span><img
-                            class="img--bg" src="{% static 'img/gallery_5.jpg' %}" alt="img"/><span
-                            class="gallery__description">Sea port</span></a>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item"
-                                                               href="{% static 'img/gallery_6.jpg' %}"
-                                                               data-fancybox="gallery"><span class="overlay"></span><img
-                            class="img--bg" src="{% static 'img/gallery_6.jpg' %}" alt="img"/><span
-                            class="gallery__description">Sea port</span></a>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item"
-                                                               href="{% static 'img/gallery_7.jpg' %}"
-                                                               data-fancybox="gallery"><span class="overlay"></span><img
-                            class="img--bg" src="{% static 'img/gallery_7.jpg' %}" alt="img"/><span
-                            class="gallery__description">Sea port</span></a>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3"><a class="gallery__item"
-                                                               href="{% static 'img/gallery_8.jpg' %}"
-                                                               data-fancybox="gallery"><span class="overlay"></span><img
-                            class="img--bg" src="{% static 'img/gallery_8.jpg' %}" alt="img"/><span
-                            class="gallery__description">Sea port</span></a>
-                    </div>
-                </div>
-                <div class="row top-50 d-block d-lg-none">
-                    <div class="col-12 text-center"><a class="button button--green"
-                                                       href="#"><span>View all gallery</span>
-                        <svg class="icon">
-                            <use xlink:href="#arrow"></use>
-                        </svg>
-                    </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- section end-->
-        <!-- section start-->
-        <section class="section testimonials bg--lgray">
-            <div class="testimonials__bg"><img class="section--bg t50 r0" src="{% static 'img/testimonials-bg.png' %}"
-                                               alt="img"/>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <div class="heading heading--white"><span class="heading__pre-title">Testimonials</span>
-                            <h3 class="heading__title">Excellent company <span class="color--green">quality</span>
-                                services</h3><span class="heading__layout layout--dgray">People</span>
-                        </div>
-                        <div class="testimonials__nav"></div>
-                        <img class="testimonials__img" src="{% static 'img/testimonials_img.png' %}" alt="img"/>
-                    </div>
-                    <div class="col-lg-6 offset-lg-1">
-                        <div class="testimonials-slider">
-                            <div class="testimonials-slider__item">
-                                <p>“Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback
-                                    scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano
-                                    bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin
-                                    kingfish.</p>
-                                <p>Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda
-                                    archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish
-                                    Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda.
-                                    Halibut: Blacksmelt”</p>
-                                <div class="testimonials-slider__author"><img src="{% static 'img/quotes.png' %}"
-                                                                              alt="img"/>
-                                    <h6>Well Singer</h6><span>Manager of Westwood</span>
-                                </div>
-                            </div>
-                            <div class="testimonials-slider__item">
-                                <p>“Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback
-                                    scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano
-                                    bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin
-                                    kingfish.</p>
-                                <p>Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda
-                                    archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish
-                                    Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda.
-                                    Halibut: Blacksmelt”</p>
-                                <div class="testimonials-slider__author"><img src="{% static 'img/quotes.png' %}"
-                                                                              alt="img"/>
-                                    <h6>Well Singer</h6><span>Manager of Westwood</span>
-                                </div>
-                            </div>
-                            <div class="testimonials-slider__item">
-                                <p>“Rockling Devario deep sea bonefish cutthroat trout streamer fish kaluga sailback
-                                    scorpionfish sand dab, turkeyfish golden loach sand diver. Leopard danio píntano
-                                    bonnetmouth; blue whiting, suckermouth armored catfish luderick blackchin
-                                    kingfish.</p>
-                                <p>Midshipman, lightfish longfin smelt pickerel houndshark whiptail. Barracuda
-                                    archerfish slimehead broadband dogfish, Pacific hake false trevally queen parrotfish
-                                    Black prickleback blenny, bigeye squaretail nurseryfish yellowtail barracuda.
-                                    Halibut: Blacksmelt”</p>
-                                <div class="testimonials-slider__author"><img src="{% static 'img/quotes.png' %}"
-                                                                              alt="img"/>
-                                    <h6>Well Singer</h6><span>Manager of Westwood</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- section end-->
-        <!-- section start-->
-        <section class="section bg--lgray front-blog">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 d-flex flex-column align-items-start">
-                        <div class="heading"><span class="heading__pre-title">Blog</span>
-                            <h3 class="heading__title">Our latest articles <span class="color--green">daily</span>
-                                update</h3><span class="heading__layout layout--lgray">Blog</span>
-                        </div>
-                        <a class="d-none d-xl-inline-block button button--green" href="#"><span>Viev more</span>
-                            <svg class="icon">
-                                <use xlink:href="#arrow"></use>
-                            </svg>
-                        </a>
-                        <div class="articles-slider__nav"></div>
-                    </div>
-                    <div class="col-xl-8">
-                        <div class="articles-slider-wrapper">
-                            <div class="articles-slider">
-                                <div class="articles-slider__item">
-                                    <div class="article">
-                                        <div class="article__img"><img class="img--bg" src="{% static 'img/bl_1.jpg' %}"
-                                                                       alt="img"/>
-                                        </div>
-                                        <div class="article__lower">
-                                            <h6 class="article__title"><a href="#">What is 3D printing ?</a></h6>
-                                            <p class="article__text">Yellowfin surgeonfish bonefish Australasian salmon
-                                                tenuis, barreleye brook lamprey European chub ridgehead, sea catfish
-                                                filefish sea chub</p>
-                                            <div class="article__details">
-                                                <span>20 October, 2019</span><span>12 comments</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="articles-slider__item">
-                                    <div class="article">
-                                        <div class="article__img"><img class="img--bg"
-                                                                       src="{% static 'img/article_2.jpg' %}"
-                                                                       alt="img"/></div>
-                                        <div class="article__lower">
-                                            <h6 class="article__title"><a href="#">New subway line</a></h6>
-                                            <p class="article__text">Bramble shark slickhead archerfish Black angelfish
-                                                marblefish bigeye walleye fire bar danio silver driftfish pelagic cod.
-                                                Wolf-herring spaghetti eel</p>
-                                            <div class="article__details">
-                                                <span>20 October, 2019</span><span>12 comments</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="articles-slider__item">
-                                    <div class="article">
-                                        <div class="article__img"><img class="img--bg"
-                                                                       src="{% static 'img/article_3.jpg' %}"
-                                                                       alt="img"/></div>
-                                        <div class="article__lower">
-                                            <h6 class="article__title"><a href="#">Importers achieve cost savings</a>
-                                            </h6>
-                                            <p class="article__text">Kokanee sprat shrimpfish. Pacific hake false
-                                                trevally queen parrotfish Black prickleback humuhumunukunukuapua'a
-                                                mosshead warbonnet !</p>
-                                            <div class="article__details">
-                                                <span>20 October, 2019</span><span>12 comments</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="articles-slider__item">
-                                    <div class="article">
-                                        <div class="article__img"><img class="img--bg"
-                                                                       src="{% static 'img/article_2.jpg' %}"
-                                                                       alt="img"/></div>
-                                        <div class="article__lower">
-                                            <h6 class="article__title"><a href="#">What is 3D printing ?</a></h6>
-                                            <p class="article__text">Yellowfin surgeonfish bonefish Australasian salmon
-                                                tenuis, barreleye brook lamprey European chub ridgehead, sea catfish
-                                                filefish sea chub</p>
-                                            <div class="article__details">
-                                                <span>20 October, 2019</span><span>12 comments</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row top-50 d-block d-xl-none">
-                            <div class="col-12 text-center"><a class="button button--green"
-                                                               href="#"><span>View more</span>
-                                <svg class="icon">
-                                    <use xlink:href="#arrow"></use>
-                                </svg>
-                            </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- section end-->
-        <!-- section start-->
-        <section class="section pt-0 bg--lgray">
-            <div class="container">
-                <div class="row bottom-70">
-                    <div class="col-12">
-                        <div class="heading heading--center"><span class="heading__pre-title">Partners</span>
-                            <h3 class="heading__title">Companies who <span class="color--green">Trust</span> us</h3>
-                            <span class="heading__layout layout--lgray">Partners</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <!-- logos slider start-->
-                        <div class="logos-slider">
-                            <div class="logos-slider__item"><img src="{% static 'img/logo_1.png' %}" alt="logo"/></div>
-                            <div class="logos-slider__item"><img src="{% static 'img/logo_2.png' %}" alt="logo"/></div>
-                            <div class="logos-slider__item"><img src="{% static 'img/logo_3.png' %}" alt="logo"/></div>
-                            <div class="logos-slider__item"><img src="{% static 'img/logo_4.png' %}" alt="logo"/></div>
-                        </div>
-                        <div class="logos-slider__dots"></div>
-                        <!-- logos slider end-->
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- section end-->
+
         <!-- section start-->
         <section class="section"><img class="img--bg" src="{% static 'img/action-bg.jpg' %}" alt="bg"/>
             <div class="container">
@@ -745,26 +288,26 @@
                                   autocomplete="off">
                                 <div class="row">
                                     <div class="col-12">
-                                        <h3 class="contact-form__title">Get in Touch</h3>
+                                        <h3 class="contact-form__title">{% trans "İletişim Formu" %}</h3>
                                     </div>
                                     <div class="col-md-6">
-                                        <input class="form__field" type="text" name="name" placeholder="Your Name"/>
+                                        <input class="form__field" type="text" name="name" placeholder="{% trans "Adınız Soyadınız" %}"/>
                                     </div>
                                     <div class="col-md-6">
-                                        <input class="form__field" type="email" name="email" placeholder="Your Email"/>
+                                        <input class="form__field" type="email" name="email" placeholder="{% trans "E- Posta Adresiniz" %}"/>
                                     </div>
                                     <div class="col-md-6">
-                                        <input class="form__field" type="tel" name="phone" placeholder="Your Phone"/>
+                                        <input class="form__field" type="tel" name="phone" placeholder="{% trans "Telefonunuz" %}"/>
                                     </div>
                                     <div class="col-md-6">
-                                        <input class="form__field" type="text" name="subject" placeholder="Subject"/>
+                                        <input class="form__field" type="text" name="subject" placeholder="{% trans "Konu" %}"/>
                                     </div>
                                     <div class="col-12">
                                         <textarea class="form__field form__message" name="message"
-                                                  placeholder="Text"></textarea>
+                                                  placeholder="{% trans "Mesaj" %}"></textarea>
                                     </div>
                                     <div class="col-12">
-                                        <button class="button button--green" type="submit"><span>Send message</span>
+                                        <button class="button button--green" type="submit"><span>{% trans "Mesajı Gönder" %}</span>
                                             <svg class="icon">
                                                 <use xlink:href="#arrow"></use>
                                             </svg>
