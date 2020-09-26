@@ -1,0 +1,280 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% block extra_css %}
+
+{% endblock extra_css %}
+{% block content %}
+    <!-- header end-->
+    <main class="main">
+        <!-- section start-->
+        <section class="hero-block">
+            <picture>
+                <source srcset="{% static 'img/service-details.jpg' %}" media="(min-width: 992px)"/>
+                <img class="img--bg" src="{% static 'img/service-details.jpg' %}" alt="img"/>
+            </picture>
+            <div class="hero-block__layout"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="align-container">
+                            <div class="align-container__item"><span
+                                    class="hero-block__overlay">{% trans "GFT Logistics" %}</span>
+                                <h1 class="hero-block__title">{% trans "İletişim" %}</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section end-->
+        <!-- section start-->
+        <section class="section contacts pb-0"><img class="contacts__bg" src="{% static 'img/contacts-map.png' %}"
+                                                    alt="map"/>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 class="contacts__title">{% trans "GFT Lojistik ve Dış Ticaret Ltd. Şti.( Head Office)" %}</h5>
+                        <div class="contacts-item">
+                            <div class="contacts-item__img">
+                                <svg class="icon">
+                                    <use xlink:href="#phone"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-item__details"><a class="contacts-item__link"
+                                                                   href="#">{% trans "+90 (212) 424 05 75" %}</a><a
+                                    class="contacts-item__link" href="#">{% trans "+90 212 424 05 95" %}</a><a
+                                    class="contacts-item__link" href="#">{% trans "+90 549 650 60 76" %}</a></div>
+                        </div>
+                        <div class="contacts-item">
+                            <div class="contacts-item__img">
+                                <svg class="icon">
+                                    <use xlink:href="#mail"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-item__details"><a class="contacts-item__link"
+                                                                   href="mailto:transporteriumus@gmail.com">{% trans "gft@gftlogistics.com" %}</a>
+                            </div>
+                        </div>
+                        <div class="contacts-item">
+                            <div class="contacts-item__img">
+                                <svg class="icon">
+                                    <use xlink:href="#pin"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-item__details">
+                                <span>{% trans "Gürsel Mah. İmrahor Cad. Premier Kampüs Ofis A Blok,Kat:5, No:196 Kağıthane/ İstanbul" %}</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="contacts__title">{% trans "GFT Lojistik ve Dış Ticaret Ltd. Şti.( Pendik Office)" %}</h5>
+                        <div class="contacts-item">
+                            <div class="contacts-item__img">
+                                <svg class="icon">
+                                    <use xlink:href="#phone"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-item__details"><a class="contacts-item__link"
+                                                                   href="#">{% trans "+90 (216) 378 05 10" %}</a></div>
+                        </div>
+                        <div class="contacts-item">
+                            <div class="contacts-item__img">
+                                <svg class="icon">
+                                    <use xlink:href="#mail"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-item__details"><a class="contacts-item__link"
+                                                                   href="mailto:transporteriumus@gmail.com">{% trans "gft@gftlogistics.com" %}</a>
+                            </div>
+                        </div>
+                        <div class="contacts-item">
+                            <div class="contacts-item__img">
+                                <svg class="icon">
+                                    <use xlink:href="#pin"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-item__details">
+                                <span>{% trans "Orta Mah. Latife Hanım Sok. No : 14C Pendik / İstanbul" %}</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- section end-->
+        <!-- section start-->
+        <section class="section contacts pb-0"><img class="contacts__bg" src="{% static 'img/contacts-map.png' %}"
+                                                    alt="map"/>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="contacts__title">{% trans "GFT Logistics LY ( Tripoli Office)" %}</h5>
+                        <div class="contacts-item">
+                            <div class="contacts-item__img">
+                                <svg class="icon">
+                                    <use xlink:href="#phone"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-item__details"><a class="contacts-item__link"
+                                                                   href="#">{% trans "+218913278433" %}</a><a
+                                    class="contacts-item__link" href="#">{% trans "+218927278433" %}</a></div>
+                        </div>
+                        <div class="contacts-item">
+                            <div class="contacts-item__img">
+                                <svg class="icon">
+                                    <use xlink:href="#mail"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-item__details"><a class="contacts-item__link"
+                                                                   href="mailto:transporteriumus@gmail.com">{% trans "gft@gftlogistics.com" %}</a>
+                            </div>
+                        </div>
+                        <div class="contacts-item">
+                            <div class="contacts-item__img">
+                                <svg class="icon">
+                                    <use xlink:href="#pin"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-item__details">
+                                <span>{% trans "Tripoli Tower Office No:49B, Ground Floor – Tripoli – Libya. P.O Box 2626 Tripoli-Libya" %}</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="contacts__title">{% trans "GFT Logistics LY ( Misurata Office)" %}</h5>
+                        <div class="contacts-item">
+                            <div class="contacts-item__img">
+                                <svg class="icon">
+                                    <use xlink:href="#phone"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-item__details"><a class="contacts-item__link"
+                                                                   href="#">{% trans "+218913278433" %}</a><a
+                                    class="contacts-item__link" href="#">{% trans "+218927278433" %}</a></div>
+                        </div>
+                        <div class="contacts-item">
+                            <div class="contacts-item__img">
+                                <svg class="icon">
+                                    <use xlink:href="#mail"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-item__details"><a class="contacts-item__link"
+                                                                   href="mailto:transporteriumus@gmail.com">{% trans "gft@gftlogistics.com" %}</a>
+                            </div>
+                        </div>
+                        <div class="contacts-item">
+                            <div class="contacts-item__img">
+                                <svg class="icon">
+                                    <use xlink:href="#pin"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-item__details">
+                                <span>{% trans "Al Sheikh St. Al Sallabi Building – First Floor, Suite # 1 Misurata – Libya." %}</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="contacts__title">{% trans "GFT Logistics LY ( Benghazi Office)" %}</h5>
+                        <div class="contacts-item">
+                            <div class="contacts-item__img">
+                                <svg class="icon">
+                                    <use xlink:href="#phone"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-item__details"><a class="contacts-item__link"
+                                                                   href="#">{% trans "+218918074004" %}</a></div>
+                        </div>
+                        <div class="contacts-item">
+                            <div class="contacts-item__img">
+                                <svg class="icon">
+                                    <use xlink:href="#mail"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-item__details"><a class="contacts-item__link"
+                                                                   href="mailto:transporteriumus@gmail.com">{% trans "gft@gftlogistics.com" %}</a>
+                            </div>
+                        </div>
+                        <div class="contacts-item">
+                            <div class="contacts-item__img">
+                                <svg class="icon">
+                                    <use xlink:href="#pin"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts-item__details">
+                                <span>{% trans "Zawia Refaya st. branch from Ahmed Mehdawi St. Benghazi" %}</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- section end-->
+        <!-- section start-->
+        <section class="section">
+            <div class="container">
+                <div class="row flex-column-reverse flex-lg-row">
+                    <div class="col-lg-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.884296282588!2d28.96516031526737!3d41.07152172347976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7481e7d5f05%3A0x73afcc0cbd80e7f7!2sPremier%20Kamp%C3%BCs%20Ofis!5e0!3m2!1str!2str!4v1601152455965!5m2!1str!2str"
+                                width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <form method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div class="form">
+                                <div class="col-12">
+                                    <h5 class="contact-form__subtitle">{% trans "İletişim Formu" %}</h5>
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" name="ad" maxlength="200" class="form__field" required=""
+                                           placeholder="{% trans "Ad" %}"
+                                           id="id_ad">
+
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" name="soyAd" maxlength="200" class="form__field" required=""
+                                           placeholder="{% trans "Soyad" %}"
+                                           id="id_soyAd"></div>
+                                <div class="col-12">
+                                    <input type="text" name="ePosta" maxlength="200" class="form__field" required=""
+                                           placeholder="{% trans "E-Posta" %}"
+                                           id="id_ePosta"></div>
+                                <div class="col-12">
+                                    <input type="text" name="telefon" maxlength="200" class="form__field" required=""
+                                           placeholder="{% trans "Telefon" %}"
+                                           id="id_telefon"></div>
+                                <div class="col-12">
+                                    <textarea name="mesaj" cols="40" rows="10" class="form__field" required=""
+                                              placeholder="{% trans "Mesaj" %}"
+                                              id="id_mesaj"></textarea></div>
+                                <div class="col-12">
+                                    <button type="submit" class="button button--green">
+                                        <span>Gönder</span>
+                                        <svg class="icon">
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section end-->
+    </main>
+    <!-- footer start-->
+{% endblock content %}
+{% block extra_script %}
+
+
+{% endblock extra_script %}

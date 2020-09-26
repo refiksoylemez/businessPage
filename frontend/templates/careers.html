@@ -63,14 +63,34 @@
         <section class="section">
             <div class="container " style="margin-top: -5%;">
                 <div class="row">
-                    <div class="col-lg-7">
-                        <form method="post" enctype="multipart/form-data">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8" style=" background-color: white">
+                        {% if Mesaj %}
+                            <div class="alert alert--attention alert--filled" style="margin-top: 5%">
+                                <div class="alert__icon">
+                                    <svg class="icon">
+                                        <use xlink:href="#check"></use>
+                                    </svg>
+                                </div>
+                                <p class="alert__text"><strong>{{ Mesaj }}</strong></p><span class="alert__close">
+										<svg class="icon">
+											<use xlink:href="#close"></use>
+										</svg></span>
+                            </div>
+                        {% endif %}
+                        <form method="post" enctype="multipart/form-data" class="mt-3">
                             {% csrf_token %}
                             {{ form.as_p }}
-                            <button type="submit">{% trans "Gönder" %}</button>
+                            <button type="submit" class="button button--green" type="submit">
+                                <span>{% trans "Gönder" %}</span>
+                                <svg class="icon">
+                                    <use xlink:href="#arrow"></use>
+                                </svg>
+                            </button>
+
                         </form>
                     </div>
-
+                    <div class="col-lg-2"></div>
                 </div>
             </div>
         </section>

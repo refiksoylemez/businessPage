@@ -1,9 +1,9 @@
 from django.db import models
-from ..common.mixins import AuditMixin
+from ..common.mixins import AuditMixin,TimeStampMixin
 from django.utils.translation import gettext_lazy as _
 def user_directory_path(instance, filename):
     # file will be uploaded to MEDIA_ROOT/user_<id>/<filename>
-    return 'user_{0}/{1}'.format(instance.user.id, filename)
+    return 'user_{0}/{1}'.format(instance.id, filename)
 
 class Kariyer(AuditMixin):
     ad = models.CharField(max_length=200, null=True, verbose_name=_('Ad'))
@@ -26,12 +26,18 @@ class Kariyer(AuditMixin):
 
 
 class Iletisim(AuditMixin):
+    ad = models.CharField(max_length=200, null=True, verbose_name=_('Ad'))
+    soyAd = models.CharField(max_length=200, null=True, verbose_name=_('Soyad'))
+    ePosta = models.CharField(max_length=200, null=True, verbose_name=_('E-Posta'))
+    telefon = models.CharField(max_length=200, null=True, verbose_name=_('Telefon'))
+    mesaj = models.TextField(null=True, verbose_name=_('Mesaj'))
+
     class Meta:
-        verbose_name = 'İletişim'
-        verbose_name_plural = 'İletişim'
+        verbose_name = _('İletişim')
+        verbose_name_plural = _('İletişim')
         default_permissions = ()
-        permissions = (('liste', 'Listeleme Yetkisi'),
-                       ('sil', 'Silme Yetkisi'),
-                       ('ekle', 'Ekleme Yetkisi'),
-                       ('guncelle', 'Güncelleme Yetkisi')
+        permissions = ((_('liste'), _('Listeleme Yetkisi')),
+                       (_('sil'), _('Silme Yetkisi')),
+                       (_('ekle'), _('Ekleme Yetkisi')),
+                       (_('guncelle'), _('Güncelleme Yetkisi'))
                        )

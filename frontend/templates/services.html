@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% block extra_css %}
+
+{% endblock extra_css %}
+{% block content %}
+    <!-- header end-->
+    <main class="main">
+        <!-- section start-->
+        <section class="hero-block">
+            <picture>
+                <source srcset="{% static 'img/service-details.jpg' %}" media="(min-width: 992px)"/>
+                <img class="img--bg" src="{% static 'img/service-details.jpg' %}" alt="img"/>
+            </picture>
+            <div class="hero-block__layout"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="align-container">
+                            <div class="align-container__item"><span
+                                    class="hero-block__overlay">{% trans "GFT Logistics" %}</span>
+                                <h1 class="hero-block__title">{{ hizmet }}</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section end-->
+        <!-- section start-->
+        <section class="section service-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-xl-9"><img class="service-details__img"
+                                                        src="{% static 'img/service-details_img.jpg' %}" alt="img"/>
+                        <h4 class="service-details__title">Plane Freight</h4>
+                        <p>Eelblenny ghost pipefish, cusk-eel red snapper horsefish, South American darter sailbearer
+                            electric stargazer. Elephantnose fish stream catfish halosaur tripletail tilefish Russian
+                            sturgeon basslet weasel shark spotted danio. Crestfish stingray lenok leatherjacket Mexican
+                            golden trout cobia. Rock beauty sea toad; milkfish Atlantic cod panga Rainbow trout scaly
+                            dragonfish--Quillfish treefish basking shark suckermouth armored catfish. Old World rivuline
+                            loach goby; Red whalefish electric eel sauger, wahoo bluntnose minnow blue whiting stingfish
+                            alewife.</p>
+                        <p>Sundaland noodlefish: man-of-war fish Blind shark shark bluntnose knifefish zingel perch
+                            pencilfish bobtail snipe eel. Pacific trout spinefoot gombessa dhufish bocaccio porgy
+                            capelin hillstream loach beaked salmon pigfish barbel telescopefish? Longfin dragonfish
+                            buri! Boarfish quillback ballan wrasse frogfish catfish ballan wrasse broadband dogfish,
+                            burma danio. Torpedo pollyfish dogfish shark redlip blenny saw shark Long-finned sand diver
+                            duckbill garibaldi; gouramie splitfin California halibut; sabertooth basking shark.</p>
+                        <div class="row bottom-50 top-40">
+                            <div class="col-sm-6 col-md-5 col-xl-4">
+                                <h5 class="warehouse__subtitle">Industries served</h5>
+                                <ul class="list list--check list--reset">
+                                    <li class="list__item">Consumer goods</li>
+                                    <li class="list__item">Food & Beverage</li>
+                                    <li class="list__item">Electronics</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6 col-md-5 col-xl-4 top-50 top-sm-0">
+                                <h5 class="warehouse__subtitle">Services offered</h5>
+                                <ul class="list list--check list--reset">
+                                    <li class="list__item">Shared warehousing</li>
+                                    <li class="list__item">Crossdocking/Transloading</li>
+                                    <li class="list__item">FBA Preaparation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 top-50 top-lg-0">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-12 bottom-50">
+                                <h5 class="service-details__subtitle">{% trans "Hizmetler" %}</h5>
+                                <ul class="category-list list--reset">
+                                    {% for hizmet1 in menuList %}
+                                        {% if hizmet1 == hizmet %}
+                                            <li class="category-list__item item--active"><a class="category-list__link"
+                                                                                            href="{% url 'services' hizmet1.slug %}">{{ hizmet1 }}</a>
+                                            </li>
+                                        {% else %}
+                                            <li class="category-list__item"><a class="category-list__link"
+                                                                               href="{% url 'services' hizmet1.slug %}">{{ hizmet1 }}</a></li>
+
+                                        {% endif %}
+
+                                    {% endfor %}
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section end-->
+
+    </main>
+    <!-- footer start-->
+{% endblock content %}
+{% block extra_script %}
+
+
+{% endblock extra_script %}
