@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'translations',
     'rosetta',
     'apps.item',
     'apps.mainpage',
@@ -56,7 +57,7 @@ MIDDLEWARE = [
     'django.middleware.locale.LocaleMiddleware',
     'django_currentuser.middleware.ThreadLocalUserMiddleware',
     'django.contrib.sites.middleware.CurrentSiteMiddleware',
-
+    'django.middleware.locale.LocaleMiddleware',
 
 ]
 

@@ -5,6 +5,7 @@ import os
 from os.path import splitext
 import uuid
 from django.contrib.auth.models import User, Group
+from translations.models import Translatable
 
 
 def photo_path(instance, filename):
@@ -29,10 +30,14 @@ class kurumsalKonum(OneTextField):
                        )
 
 
-class kurumsalDetay(models.Model):
+class kurumsalDetay(Translatable):
     tip = models.ForeignKey(kurumsalKonum, on_delete=models.DO_NOTHING, verbose_name='Konum')
     baslik = models.CharField(max_length=150, verbose_name="Başlık")
     icerik = models.TextField(default="", null=True, blank=True, verbose_name="İçerik")
+
+    class TranslatableMeta:
+        fields = ['baslik', 'icerik']
+
 
     def __str__(self):
         return self.baslik

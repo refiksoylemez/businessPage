@@ -26,10 +26,13 @@ from django.urls import path
 from django.conf.urls.i18n import i18n_patterns
 from django.utils.translation import gettext_lazy as _
 from apps.mainpage.views import mainPage
-
+from apps.corporate.views import corporate
+from apps.userform.views import careers
 urlpatterns = i18n_patterns(
     path('admin/', admin.site.urls),
     path('', mainPage, name='mainPage'),
+    path(_('kurumsal/'), corporate, name='corporate'),
+    path(_('kariyer/'), careers, name='careers'),
     path(_('rosetta/'), include('rosetta.urls')),
 ) + static(settings.STATIC_URL, document_root=settings.STATIC_URL) + static(settings.MEDIA_URL,
                                                                                           document_root=settings.MEDIA_ROOT)

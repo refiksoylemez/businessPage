@@ -10,7 +10,7 @@
         <div class="promo">
             <div class="promo-slider">
                 <div class="promo-slider__item">
-                    <div class="promo-slider__layout"></div>
+                    <div class=""></div>
                     <video playsinline="playsinline" height="70%" autoplay="autoplay" muted="muted" loop="loop">
                         <source src="{% static 'img/hero_video_filter1_2.mp4' %}" type="video/mp4"
                                 media="(min-width: 992px)">
@@ -21,25 +21,13 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-9 col-xl-7">
-                                        <div class="promo-slider__wrapper-1"><span
-                                                class="promo-slider__overlay">TransX</span>
-                                            <h2 class="promo-slider__title">Transportation Services around the
-                                                World</h2>
+
+
+                                         <div class="promo-slider__wrapper-1"><span
+                                                class="promo-slider__overlay">{% trans "GFT Logistics" %}</span>
+                                            <h2 class="promo-slider__title">{% trans "Sektöre Değer Kat, " %}<br>{% trans "Sınırları Aş" %}</h2>
                                         </div>
-                                        <div class="promo-slider__wrapper-2">
-                                            <p class="promo-slider__subtitle">Rockling Devario deep sea bonefish
-                                                cutthroat trout streamer fish kaluga sailback scorpionfish sand dab,
-                                                turkeyfish golden loach sand diver. Leopard danio píntano bonnetmouth;
-                                                blue whiting, suckermouth armored catfish luderick blackchin
-                                                kingfish.</p>
-                                        </div>
-                                        <div class="promo-slider__wrapper-3"><a class="button button--promo"
-                                                                                href="#"><span>Explore more</span>
-                                            <svg class="icon">
-                                                <use xlink:href="#arrow"></use>
-                                            </svg>
-                                        </a>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -66,18 +54,18 @@
             <div class="container">
                 <div class="row bottom-70">
                     <div class="col-lg-4">
-                        <div class="heading bottom-40"><span class="heading__pre-title">{% trans "Hizmetlerimiz" %}</span>
-                            <h3 class="heading__title">{% trans "GFT Logistics" %}</h3><span class="heading__layout">{% trans "Hizmetleri" %}</span>
+                        <div class="heading bottom-40"><span class="heading__pre-title">{% trans "HİZMETLERİMİZ" %}</span>
+                            <h3 class="heading__title">{% trans "GFT Logistics" %}</h3><span class="heading__layout">{% trans "Hizmetlerimiz" %}</span>
                         </div>
-                        <a class="button button--green d-none d-lg-inline-block" href="#"><span>{% trans "Tüm Hizmetler" %}</span>
+                        <a class="button button--green d-none d-lg-inline-block" href="#" style="border-color: #ee2737"><span>{% trans "Tüm Hizmetler" %}</span>
                             <svg class="icon">
                                 <use xlink:href="#arrow"></use>
                             </svg>
                         </a>
                     </div>
                     <div class="col-lg-8">
-                        <p><strong>{% blocktranslate %}Onlarca yılın getirmiş olduğu deneyimimiz, sektöre olan tutkumuz ve yenilikçi yaklaşım tarzımız ile kurulduğumuz günden itibaren portföyümüzdeki firmalara  hizmet sağlamaktan mutluluk duyuyoruz.{% endblocktranslate  %}</strong></p>
-                        <p class="bottom-0">{% blocktranslate %}Onlarca yılın getirmiş olduğu deneyimimiz, sektöre olan tutkumuz ve yenilikçi yaklaşım tarzımız ile kurulduğumuz günden itibaren portföyümüzdeki firmalara  hizmet sağlamaktan mutluluk duyuyoruz.{% endblocktranslate  %}</p>
+
+                        <p class="bottom-0" style="margin-top: 15%">{% blocktranslate %}Onlarca yılın getirmiş olduğu deneyimimiz, sektöre olan tutkumuz ve yenilikçi yaklaşım tarzımız ile kurulduğumuz günden itibaren portföyümüzdeki firmalara  hizmet sağlamaktan mutluluk duyuyoruz.{% endblocktranslate  %}</p>
                     </div>
                 </div>
                 <div class="row offset-50">
@@ -131,20 +119,20 @@
             <div class="front-about__img"><img class="img--bg" src="{% static 'img/about_img.jpg' %}" alt="img"/></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4 offset-xl-1 d-none d-xl-flex offset-50">
-                        <div class="counter counter--filled">
+                    <div class="col-xl-4 offset-xl-1 d-none d-xl-flex offset-50" >
+                        <div class="counter counter--filled" style="background-color: #ee2737 ">
                             <div class="counter__top"><span
                                     class="js-counter counter__count">{% trans "" %}{% trans "100" %}</span><span
                                     class="counter__subject">{% trans "" %}{% trans "'lerce" %}</span></div>
                             <div class="counter__lower"><span
-                                    class="counter__details">{% trans "" %}{% trans "Lokasyon" %}</span></div>
+                                    class="counter__details" style="color: white">{% trans "" %}{% trans "Lokasyon" %}</span></div>
                         </div>
                     </div>
                     <div class="col-xl-7">
                         <div class="heading heading--white"><span
                                 class="heading__pre-title">{% trans "GFT Logistics Hakkında" %}</span>
                             <h3 class="heading__title"> {% trans "Ticaretin merkezi olan" %} <span
-                                    class="color--green">{% trans "İstanbul" %}</span>{% trans "’da kurulduk." %}</h3>
+                                    class="color--green" style="color:#ee2737">{% trans "İstanbul" %}</span>{% trans "’da kurulduk." %}</h3>
                         </div>
                         <p>{% blocktranslate %}Deneyimli kadromuz ve dünya çapında acente ağlarımızla kara, deniz, hava
                             ve demiryolu taşımacılığında sınırları aşan hizmetler veriyoruz. {% endblocktranslate %}</p>
@@ -168,7 +156,7 @@
                     <div class="col-lg-5 col-xl-4">
                         <div class="heading"><span class="heading__pre-title">{% trans "GFT Logistics" %}</span>
                             <h3 class="heading__title">{% trans "Güçlü " %} <span
-                                    class="color--green">{% trans "Özelliklerimiz" %}</span>
+                                    class="color--green" style="color: #ee2737">{% trans "Özelliklerimiz" %}</span>
                             </h3><span class="heading__layout layout--lgray">{% trans "Özelliklerimiz" %}</span>
                         </div>
                     </div>
@@ -177,9 +165,7 @@
                     <div class="col-sm-3 col-lg-4">
                         <div class="icon-item">
                             <div class="icon-item__img ">
-                                <svg class="icon">
-                                    <use xlink:href="#warehouse"></use>
-                                </svg>
+                                <img src="{% static 'img/Geniş-Acenta-Agi.png' %}" alt="icon"/>
                             </div>
                             <h6 class="icon-item__title">{% trans "" %}{% trans "Geniş Acente Ağı" %} </h6>
 
@@ -188,9 +174,7 @@
                     <div class="col-sm-3 col-lg-4">
                         <div class="icon-item">
                             <div class="icon-item__img">
-                                <svg class="icon">
-                                    <use xlink:href="#support"></use>
-                                </svg>
+                                <img src="{% static 'img/Deneyimli-Ekipler.png' %}" alt="icon"/>
                             </div>
                             <h6 class="icon-item__title">{% trans "Deneyimli Ekipler" %}</h6>
 
@@ -199,9 +183,7 @@
                     <div class="col-sm-3 col-lg-4">
                         <div class="icon-item">
                             <div class="icon-item__img">
-                                <svg class="icon">
-                                    <use xlink:href="#location"></use>
-                                </svg>
+                                <img src="{% static 'img/Entegre-Hizmet.png' %}" alt="icon"/>
                             </div>
                             <h6 class="icon-item__title">{% trans "Entegre Hizmet" %}</h6>
 
@@ -210,20 +192,16 @@
                     <div class="col-sm-3 col-lg-4">
                         <div class="icon-item">
                             <div class="icon-item__img">
-                                <svg class="icon">
-                                    <use xlink:href="#insurance"></use>
-                                </svg>
+                                <img src="{% static 'img/Kapidan-Kapiya-cozum.png' %}" alt="icon"/>
                             </div>
-                            <h6 class="icon-item__title">{% trans "Deneyimli Ekipler" %}</h6>
+                            <h6 class="icon-item__title">{% trans "Kapıdan Kapıya Çözüm " %}</h6>
 
                         </div>
                     </div>
                     <div class="col-sm-3 col-lg-4">
                         <div class="icon-item">
                             <div class="icon-item__img">
-                                <svg class="icon">
-                                    <use xlink:href="#insurance"></use>
-                                </svg>
+                                 <img src="{% static 'img/Müsteri-Destegi.png' %}" alt="icon"/>
                             </div>
                             <h6 class="icon-item__title">{% trans "Müşteri Desteği" %}</h6>
 
@@ -232,9 +210,7 @@
                     <div class="col-sm-3 col-lg-4">
                         <div class="icon-item">
                             <div class="icon-item__img">
-                                <svg class="icon">
-                                    <use xlink:href="#insurance"></use>
-                                </svg>
+                                <img src="{% static 'img/Musteri-Memnuniyeti.png' %}" alt="icon"/>
                             </div>
                             <h6 class="icon-item__title">{% trans "Müşteri Memnuniyeti" %}</h6>
 
