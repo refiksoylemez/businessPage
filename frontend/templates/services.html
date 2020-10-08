@@ -34,38 +34,22 @@
                 <div class="row">
                     <div class="col-lg-8 col-xl-9"><img class="service-details__img"
                                                         src="{% static 'img/service-details_img.jpg' %}" alt="img"/>
-                        <h4 class="service-details__title">Plane Freight</h4>
-                        <p>Eelblenny ghost pipefish, cusk-eel red snapper horsefish, South American darter sailbearer
-                            electric stargazer. Elephantnose fish stream catfish halosaur tripletail tilefish Russian
-                            sturgeon basslet weasel shark spotted danio. Crestfish stingray lenok leatherjacket Mexican
-                            golden trout cobia. Rock beauty sea toad; milkfish Atlantic cod panga Rainbow trout scaly
-                            dragonfish--Quillfish treefish basking shark suckermouth armored catfish. Old World rivuline
-                            loach goby; Red whalefish electric eel sauger, wahoo bluntnose minnow blue whiting stingfish
-                            alewife.</p>
-                        <p>Sundaland noodlefish: man-of-war fish Blind shark shark bluntnose knifefish zingel perch
-                            pencilfish bobtail snipe eel. Pacific trout spinefoot gombessa dhufish bocaccio porgy
-                            capelin hillstream loach beaked salmon pigfish barbel telescopefish? Longfin dragonfish
-                            buri! Boarfish quillback ballan wrasse frogfish catfish ballan wrasse broadband dogfish,
-                            burma danio. Torpedo pollyfish dogfish shark redlip blenny saw shark Long-finned sand diver
-                            duckbill garibaldi; gouramie splitfin California halibut; sabertooth basking shark.</p>
+                        <h4 class="service-details__title">{{ hizmet }}</h4>
+                        <p>{{ hizmet.detay }}</p>
+
+                        <h4 class="service-details__title">{% trans "Sunulan Hizmetler" %}</h4>
                         <div class="row bottom-50 top-40">
-                            <div class="col-sm-6 col-md-5 col-xl-4">
-                                <h5 class="warehouse__subtitle">Industries served</h5>
-                                <ul class="list list--check list--reset">
-                                    <li class="list__item">Consumer goods</li>
-                                    <li class="list__item">Food & Beverage</li>
-                                    <li class="list__item">Electronics</li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-6 col-md-5 col-xl-4 top-50 top-sm-0">
-                                <h5 class="warehouse__subtitle">Services offered</h5>
-                                <ul class="list list--check list--reset">
-                                    <li class="list__item">Shared warehousing</li>
-                                    <li class="list__item">Crossdocking/Transloading</li>
-                                    <li class="list__item">FBA Preaparation</li>
-                                </ul>
-                            </div>
+                            {% for sunulan in hizmet.sunulanHizmet.all %}
+                                <div class="col-sm-6 col-md-5 col-xl-4">
+
+                                    <ul class="list list--check list--reset">
+                                        <li class="list__item">{{ sunulan }}</li>
+                                    </ul>
+
+                                </div>
+                            {% endfor %}
                         </div>
+
                     </div>
                     <div class="col-lg-4 col-xl-3 top-50 top-lg-0">
                         <div class="row">
