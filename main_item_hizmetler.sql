@@ -1,23 +1,15 @@
-INSERT INTO item_sunulanhizmetler (id, text, slug) VALUES (1, 'FCL / Full Konteyner', 'fcl-full-konteyner');
-INSERT INTO item_sunulanhizmetler (id, text, slug) VALUES (2, 'LCL / Parsiyel Konteyner', 'lcl-parsiyel-konteyner');
-INSERT INTO item_sunulanhizmetler (id, text, slug) VALUES (3, 'Transit Taşımacılık', 'transit-tasmaclk');
-INSERT INTO item_sunulanhizmetler (id, text, slug) VALUES (4, 'Çapraz Sevkiyat', 'capraz-sevkiyat');
-INSERT INTO item_sunulanhizmetler (id, text, slug) VALUES (5, 'Üçüncü Ülke Yük Taşıma Organizasyonları', 'ucuncu-ulke-yuk-tasma-organizasyonlar');
-INSERT INTO item_sunulanhizmetler (id, text, slug) VALUES (6, 'Dökme Açık Gemi Yüklemeleri', 'dokme-ack-gemi-yuklemeleri');
-INSERT INTO item_sunulanhizmetler (id, text, slug) VALUES (7, 'Intermodal Taşımacılık', 'intermodal-tasmaclk');
-INSERT INTO item_sunulanhizmetler (id, text, slug) VALUES (8, 'Tehlikeli Maddelerin Taşınması', 'tehlikeli-maddelerin-tasnmas');
-INSERT INTO item_sunulanhizmetler (id, text, slug) VALUES (9, 'Kapıdan Kapıya Taşımalar', 'kapdan-kapya-tasmalar');
-INSERT INTO item_sunulanhizmetler (id, text, slug) VALUES (10, 'Lowbed Taşımalar', 'lowbed-tasmalar');
-INSERT INTO item_sunulanhizmetler (id, text, slug) VALUES (11, 'Frigorifik Taşımalar', 'frigorifik-tasmalar');
-INSERT INTO item_sunulanhizmetler (id, text, slug) VALUES (12, 'Gümrükleme ve Depolama Hizmetleri', 'gumrukleme-ve-depolama-hizmetleri');
-INSERT INTO item_sunulanhizmetler (id, text, slug) VALUES (13, 'Genel Kargo Taşımaları', 'genel-kargo-tasmalar');
-INSERT INTO item_sunulanhizmetler (id, text, slug) VALUES (14, 'Chartering Hizmetleri', 'chartering-hizmetleri');
-INSERT INTO item_sunulanhizmetler (id, text, slug) VALUES (15, 'Avrupa, Balkanlar, Orta Doğu ve Baltık ülkeleri ile Türkiye arasındaki demiryolu taşımacılık çözümleri', 'avrupa-balkanlar-orta-dogu-ve-baltk-ulkeleri-ile-turkiye-arasndaki-demiryolu-tasmaclk-cozumleri');
-INSERT INTO item_sunulanhizmetler (id, text, slug) VALUES (16, 'Askeri Araçlar', 'askeri-araclar');
-INSERT INTO item_sunulanhizmetler (id, text, slug) VALUES (17, 'Silahlar', 'silahlar');
-INSERT INTO item_sunulanhizmetler (id, text, slug) VALUES (18, 'Mühimmat', 'muhimmat');
-INSERT INTO item_sunulanhizmetler (id, text, slug) VALUES (19, 'Gümrüklü, Gümrüksüz Depolama', 'gumruklu-gumruksuz-depolama');
-INSERT INTO item_sunulanhizmetler (id, text, slug) VALUES (20, 'Kapalı, Açık Depolama', 'kapal-ack-depolama');
-INSERT INTO item_sunulanhizmetler (id, text, slug) VALUES (21, 'Tehlikeli Madde Depolama', 'tehlikeli-madde-depolama');
-INSERT INTO item_sunulanhizmetler (id, text, slug) VALUES (22, 'Soğuk Hava Depolama', 'soguk-hava-depolama');
-INSERT INTO item_sunulanhizmetler (id, text, slug) VALUES (23, 'Elleçleme, Paketleme, Barkodlama, Etiketleme Hizmetleri', 'ellecleme-paketleme-barkodlama-etiketleme-hizmetleri');
+INSERT INTO item_hizmetler (id, text, slug, detay, resim, resim1) VALUES (1, 'Denizyolu Taşımacılığı', 'denizyolu-tasmaclg', 'Denizleri ve okyanusları aşıyoruz!
+
+GFT Logistics olarak geniş acente ağımız ile tüm dünya limanları ve Türkiye limanları arasında denizyolu ithalat ve ihracat taşımacılık hizmeti veriyoruz.', 'images/1920x657_Deniz_Yolu.jpg', 'images/867x437_Deniz_Yolu.jpg');
+INSERT INTO item_hizmetler (id, text, slug, detay, resim, resim1) VALUES (2, 'Karayolu Taşımacılığı', 'karayolu-tasmaclg', 'Yolları, dağları, şehirleri aşıyoruz!
+
+GFT Logistics olarak global iş ortaklarımız ile komple ve parsiyel taşımacılık hizmeti sunuyoruz.', 'images/1920x657_kara_yolu_.jpg', 'images/867x437_Kara_Yolu.jpg');
+INSERT INTO item_hizmetler (id, text, slug, detay, resim, resim1) VALUES (4, 'Havayolu Taşımacılığı', 'havayolu-tasmaclg', 'Bulutları aşıyoruz!
+
+GFT Logistics olarak dünya çapında güçlü acentelerimiz ile  müşterilerimizin ithalat ve ihracat havayolu taşımalarını hızlı, güvenli ve ekonomik çözümler sunarak gerçekleştiriyoruz.', 'images/1920x657_Hava_Yolu__3.jpg', 'images/867x437_Hava_yolu_2_.jpg');
+INSERT INTO item_hizmetler (id, text, slug, detay, resim, resim1) VALUES (5, 'Demiryolu Taşımacılığı', 'demiryolu-tasmaclg', 'Köprüleri, tünelleri ve istasyonları aşıyoruz!
+
+GFT Logistics olarak müşterilerimizin talepleri doğrultusunda demiryolu ile uluslararası yük taşımalarını organize ediyoruz.', 'images/1920x657_Demir_Yolu.jpg', 'images/867x437_Demir_Yolu.jpg');
+INSERT INTO item_hizmetler (id, text, slug, detay, resim, resim1) VALUES (6, 'Silah ve Mühimmat Taşımacılığı', 'silah-ve-muhimmat-tasmaclg', 'GFT Logistics olarak savunma sanayi sektöründe hizmet veren müşterilerimizin ihtiyaçlarını güvenli yöntemlerle karşılıyoruz.', 'images/1920x657_Mühimmat.jpg', 'images/867x437_Mühimmat.jpg');
+INSERT INTO item_hizmetler (id, text, slug, detay, resim, resim1) VALUES (7, 'Depolama Hizmetleri', 'depolama-hizmetleri', 'GFT Logistics olarak müşterilerimizin tedarik zincirinin ayrılmaz bir parçası olan depolama ihtiyaçlarını Türkiye’deki depo tedarik ağımız sayesinde kısa veya uzun dönem, gümrüklü veya gümrüksüz depolama hizmetlerimizle karşılıyoruz.', 'images/1920x657_Depo.jpg', 'images/867x437_Depo.jpg');
+INSERT INTO item_hizmetler (id, text, slug, detay, resim, resim1) VALUES (8, 'Tedarik Zinciri ve Dış Ticaret', 'tedarik-zinciri-ve-ds-ticaret', 'GFT Logistics olarak müşterilerimizin, hedef pazarı olan ürünleri tedarik edebilmesini sağlayan çözümlerimiz ve entegre lojistik süreçlerimiz ile pazarın lider firmalarına ulaşmasını, avantajlı fiyatlar elde etmesini, ihracat süreçleri hakkında bilgi edinmesini, hızlı ve kaliteli lojistik hizmeti almasını sağlıyoruz.', 'images/1920x657_Tedarik_.jpg', 'images/867x437_Tedarik.jpg');
