@@ -5,98 +5,119 @@
 
 {% endblock extra_css %}
 {% block content %}
-    <!-- header end-->
-    <main class="main">
-        <!-- section start-->
-        <section class="hero-block">
-            <picture>
-                <source srcset="{% static 'img/kariyerBig.jpg' %}" media="(min-width: 992px)"/>
-                <img class="img--bg" src="{% static 'img/kariyerBig.jpg' %}" alt="img"/>
-            </picture>
-            <div class="hero-block__layout"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="align-container">
-                            <div class="align-container__item"><span
-                                    class="hero-block__overlay">{% trans "GFT Logistics" %}</span>
-                                <h1 class="hero-block__title">{% trans "Kariyer" %}</h1>
+
+    <section class="hero-block">
+        <picture>
+            <source srcset="{% static 'img/kariyerBig.jpg' %}" media="(min-width: 992px)"/>
+            <img class="img--bg" src="{% static 'img/kariyerBig.jpg' %}" alt="img"/>
+        </picture>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="align-container">
+                        <div class="align-container__item"><span
+                                class="hero-block__overlay">{% trans "GFT Logistics" %}</span>
+                            <h1 class="hero-block__title">{% trans "Kariyer" %}</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section end-->
+
+    <!-- section start-->
+    <section class="section action-section pb-0 bottom-60">
+        <div class="action-section__bg" style="height: 491px"><img class="img--bg"
+                                                                   src="{% static 'img/kariyer.jpg' %}"
+                                                                   alt="img"/>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="heading bottom-40">
+                        <h3 class="heading__title">{% trans "Herkesin bir yolu, bir hikayesi vardır." %}
+                            <br/>{% trans "Senin hikayeni birlikte yazalım." %}</h3>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 is--bordered" style="background: white">
+                    <form method="post" enctype="multipart/form-data" class="mt-3">
+                        {% csrf_token %}
+                        <div class="row">
+
+
+                            <div class="col-6">
+
+                                <label for="id_ad" style="color: #ee2737">Ad:</label> <input type="text" name="ad"
+                                                                                             maxlength="200"
+                                                                                             class="form__field"
+                                                                                             required="" id="id_ad">
+
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- section end-->
-
-        <!-- section start-->
-        <section class="section action-section pb-0">
-            <div class="action-section__bg" style="height: 491px"><img class="img--bg"
-                                                                       src="{% static 'img/action-section (1).jpg' %}"
-                                                                       alt="img"/>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="heading bottom-40">
-                            <h3 class="heading__title">{% trans "Herkesin bir yolu, bir hikayesi vardır." %}
-                                <br/>{% trans "Senin hikayeni birlikte yazalım." %}</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 top-40 top-lg-0">
-                        <p class="bottom-0">
-
-                            {% blocktranslate %}Ekibimize katılacak yetenekli ve yetkin kişileri arıyoruz. Sen de
-                                ekibimizin bir üyesi olmak istiyorsan başvuru formunu doldur. {% endblocktranslate %}
-                        </p>
-
-
-                    </div>
-
-
-                </div>
-
-            </div>
-        </section>
-        <!-- section end-->
-        <!-- section start-->
-        <section class="section">
-            <div class="container " style="margin-top: -5%;">
-                <div class="row">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-8" style=" background-color: white">
-                        {% if Mesaj %}
-                            <div class="alert alert--attention alert--filled" style="margin-top: 5%">
-                                <div class="alert__icon">
+                            <div class="col-6"><label for="id_soyAd" style="color: #ee2737">Soyad:</label> <input
+                                    type="text" name="soyAd"
+                                    maxlength="200"
+                                    class="form__field"
+                                    required=""
+                                    id="id_soyAd"></div>
+                            <div class="col-6"><label for="id_ePosta" style="color: #ee2737">E-Posta:</label> <input
+                                    type="text"
+                                    name="ePosta"
+                                    maxlength="200"
+                                    class="form__field"
+                                    required=""
+                                    id="id_ePosta"></div>
+                            <div class="col-6"><label for="id_adres" style="color: #ee2737">Adres:</label> <textarea
+                                    name="adres" cols="40"
+                                    rows="10"
+                                    class="form__field"
+                                    required=""
+                                    id="id_adres"></textarea>
+                            </div>
+                            <div class="col-6"><label for="id_telefon" style="color: #ee2737">Telefon:</label>
+                                <input type="text"
+                                       name="telefon"
+                                       maxlength="200"
+                                       class="form__field"
+                                       required=""
+                                       id="id_telefon">
+                            </div>
+                            <div class="col-6"><label for="id_cv" style="color: #ee2737">Özgeçmiş:</label> <input
+                                    type="file" name="cv"
+                                    class="form__field"
+                                    required="" id="id_cv">
+                            </div>
+                            <div class="col-6"><label for="id_mesaj" style="color: #ee2737">Mesaj:</label> <textarea
+                                    name="mesaj" cols="40"
+                                    rows="10"
+                                    class="form__field"
+                                    required=""
+                                    id="id_mesaj"></textarea>
+                            </div>
+                            <div class="col-6"><br>
+                                <button type="submit" class="button button--green">
+                                    <span>Gönder</span>
                                     <svg class="icon">
-                                        <use xlink:href="#check"></use>
+                                        <use xlink:href="#arrow"></use>
                                     </svg>
-                                </div>
-                                <p class="alert__text"><strong>{{ Mesaj }}</strong></p><span class="alert__close">
-										<svg class="icon">
-											<use xlink:href="#close"></use>
-										</svg></span>
+                                </button>
                             </div>
-                        {% endif %}
-                        <form method="post" enctype="multipart/form-data" class="mt-3">
-                            {% csrf_token %}
-                            {{ form.as_p }}
-                            <button type="submit" class="button button--green" type="submit">
-                                <span>{% trans "Gönder" %}</span>
-                                <svg class="icon">
-                                    <use xlink:href="#arrow"></use>
-                                </svg>
-                            </button>
 
-                        </form>
-                    </div>
-                    <div class="col-lg-2"></div>
+
+                    </form>
+
+
                 </div>
             </div>
-        </section>
-        <!-- section end-->
-    </main>
-    <!-- footer start-->
+
+
+        </div>
+
+        </div>
+    </section>
+
 {% endblock content %}
 {% block extra_script %}
 

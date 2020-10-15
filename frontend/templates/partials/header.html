@@ -17,7 +17,7 @@
               <div class="screen__item item--active"><a class="screen__link" href="/">{% trans "Anasayfa" %}</a></div>
               <div class="screen__item"><a class="screen__link" href="{% url 'corporate' %}">{% trans "Kurumsal" %}</a></div>
               <div class="screen__item"><a class="screen__link" href="#">{% trans "Hizmetler" %}</a></div>
-              <div class="screen__item"><a class="screen__link" href="#">{% trans "Online İşlemler" %}</a></div>
+              <div class="screen__item"><a class="screen__link" href="{% url 'online' %}">{% trans "Online İşlemler" %}</a></div>
               <div class="screen__item"><a class="screen__link" href="{% url 'careers' %}">{% trans "Kariyer" %}</a></div>
               <div class="screen__item"><a class="screen__link" href="{% url 'contacts' %}">{% trans "İletişim" %}</a></div>
 
@@ -59,7 +59,7 @@
                           </ul>
                       </li>
                       <li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link"
-                                                                                href="javascript:void(0);"><span>{% trans "ONLİNE İŞLEMLER" %}</span></a>
+                                                                                href="{% url 'online' %}"><span>{% trans "ONLİNE İŞLEMLER" %}</span></a>
 
                       </li>
                       <li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link"

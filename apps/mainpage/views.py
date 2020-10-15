@@ -6,6 +6,9 @@ def mainPage(request):
     kurumsal=kurumsalDetay.objects.all().translate(request.LANGUAGE_CODE)
     return render(request, "index.html")
 
+def online(request):
+    return render(request, "online.html")
+
 
 def live(request):
     menuList = Hizmetler.objects.all()
