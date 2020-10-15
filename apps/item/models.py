@@ -40,6 +40,7 @@ class Hizmetler(Translatable):
     detay = models.TextField(null=True, verbose_name=_('Detay'))
 
     resim = models.ImageField(('Resim'), upload_to='images/', null=True, )
+    resim1 = models.ImageField(('Resim 1'), upload_to='images/', null=True, )
     sunulanHizmet = models.ManyToManyField(SunulanHizmetler, blank=True, verbose_name="Sunulan Hizmetler")
     slug = models.SlugField(unique=True, editable=False)
 
@@ -50,6 +51,10 @@ class Hizmetler(Translatable):
     def resim_url(self):
         if self.resim and hasattr(self.resim, 'url'):
             return self.resim.url
+    @property
+    def resim1_url(self):
+        if self.resim1 and hasattr(self.resim1, 'url'):
+            return self.resim1.url
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.text)

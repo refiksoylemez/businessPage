@@ -5,14 +5,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-lg-4">
-                    <h6 class="page-footer__title title--white">{% trans "Menü" %}</h6>
+                    <h6 class="page-footer__title title--white">{% trans "Hizmetler" %}</h6>
                     <ul class="page-footer__menu list--reset">
-                        <li><a href="#">{% trans "Anasayfa" %}</a></li>
-                        <li><a href="#">{% trans "Kurumsal" %}</a></li>
+
+                        <li><a href="/">{% trans "Anasayfa" %}</a></li>
+                        <li><a href="{% url 'corporate' %}">{% trans "Kurumsal" %}</a></li>
                         <li><a href="#">{% trans "Hizmetler" %}</a></li>
                         <li><a href="#">{% trans "Online İşlemler" %}</a></li>
-                        <li><a href="#">{% trans "Kariyer" %}</a></li>
-                        <li><a href="#">{% trans "İletişim" %}</a></li>
+                        <li><a href="{% url 'careers' %}">{% trans "Kariyer" %}</a></li>
+                        <li><a href="{% url 'contacts' %}">{% trans "İletişim" %}</a></li>
 
                     </ul>
                 </div>

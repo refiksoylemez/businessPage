@@ -14,12 +14,12 @@
                       <span>{% trans "GFT Logistics" %}</span>
                   </h6>
               </div>
-              <div class="screen__item item--active"><a class="screen__link" href="#">{% trans "Anasayfa" %}</a></div>
+              <div class="screen__item item--active"><a class="screen__link" href="/">{% trans "Anasayfa" %}</a></div>
               <div class="screen__item"><a class="screen__link" href="{% url 'corporate' %}">{% trans "Kurumsal" %}</a></div>
               <div class="screen__item"><a class="screen__link" href="#">{% trans "Hizmetler" %}</a></div>
               <div class="screen__item"><a class="screen__link" href="#">{% trans "Online İşlemler" %}</a></div>
-              <div class="screen__item"><a class="screen__link" href="#">{% trans "Kariyer" %}</a></div>
-              <div class="screen__item"><a class="screen__link" href="#">{% trans "İletişim" %}</a></div>
+              <div class="screen__item"><a class="screen__link" href="{% url 'careers' %}">{% trans "Kariyer" %}</a></div>
+              <div class="screen__item"><a class="screen__link" href="{% url 'contacts' %}">{% trans "İletişim" %}</a></div>
 
           </div>
       </div>

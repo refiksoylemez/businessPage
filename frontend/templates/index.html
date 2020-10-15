@@ -11,7 +11,7 @@
             <div class="promo-slider">
                 <div class="promo-slider__item">
                     <div class=""></div>
-                    <video playsinline="playsinline" height="70%" autoplay="autoplay" muted="muted" loop="loop">
+                    <video id="videoid" playsinline="playsinline" height="1100px" autoplay="autoplay" muted="muted" loop="loop">
                         <source src="{% static 'img/hero_video_filter1_2.mp4' %}" type="video/mp4"
                                 media="(min-width: 992px)">
                     </video>
@@ -122,10 +122,10 @@
                     <div class="col-xl-4 offset-xl-1 d-none d-xl-flex offset-50" >
                         <div class="counter counter--filled" style="background-color: #ee2737 ">
                             <div class="counter__top"><span
-                                    class="js-counter counter__count">{% trans "" %}{% trans "100" %}</span><span
-                                    class="counter__subject">{% trans "" %}{% trans "'lerce" %}</span></div>
+                                    class="js-counter counter__count">{% trans "100" %}</span><span
+                                    class="counter__subject">{% trans "'lerce" %}</span></div>
                             <div class="counter__lower"><span
-                                    class="counter__details" style="color: white">{% trans "" %}{% trans "Lokasyon" %}</span></div>
+                                    class="counter__details" style="color: white">{% trans "Lokasyon" %}</span></div>
                         </div>
                     </div>
                     <div class="col-xl-7">
@@ -167,7 +167,7 @@
                             <div class="icon-item__img ">
                                 <img src="{% static 'img/Geniş-Acenta-Agi.png' %}" alt="icon"/>
                             </div>
-                            <h6 class="icon-item__title">{% trans "" %}{% trans "Geniş Acente Ağı" %} </h6>
+                            <h6 class="icon-item__title"> {% trans "Geniş Acente Ağı" %} </h6>
 
                         </div>
                     </div>
@@ -348,5 +348,7 @@
 {% endblock content %}
 {% block extra_script %}
 
-
+<script type="text/javascript">
+    document.getElementById('videoid').play();
+</script>
 {% endblock extra_script %}

@@ -10,8 +10,8 @@
         <!-- section start-->
         <section class="hero-block">
             <picture>
-                <source srcset="{% static 'img/service-details.jpg' %}" media="(min-width: 992px)"/>
-                <img class="img--bg" src="{% static 'img/service-details.jpg' %}" alt="img"/>
+                <source srcset="{{ hizmet.resim_url }}" media="(min-width: 992px)"/>
+                <img class="img--bg" src="{{ hizmet.resim_url }}" alt="img"/>
             </picture>
             <div class="hero-block__layout"></div>
             <div class="container">
@@ -33,7 +33,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-xl-9"><img class="service-details__img"
-                                                        src="{% static 'img/service-details_img.jpg' %}" alt="img"/>
+                                                        src="{{ hizmet.resim1_url }}" alt="img"/>
                         <h4 class="service-details__title">{{ hizmet }}</h4>
                         <p>{{ hizmet.detay }}</p>
 

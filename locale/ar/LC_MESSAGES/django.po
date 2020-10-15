@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-18 10:17+0300\n"
-"PO-Revision-Date: 2020-10-08 08:33+0000\n"
-"Last-Translator: b'  <refik@refik.com>'\n"
+"POT-Creation-Date: 2020-10-08 08:48+0300\n"
+"PO-Revision-Date: 2020-10-08 08:51+0000\n"
+"Last-Translator: b'  <ref@ref.com>'\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,14 +18,715 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 "X-Translated-Using: django-rosetta 0.9.4\n"
 
-#: .\business\settings.py:114
+#: .\apps\item\models.py:27 .\apps\item\models.py:28
+#: .\frontend\templates\services.html:40
+msgid "Sunulan Hizmetler"
+msgstr ""
+
+#: .\apps\item\models.py:30 .\apps\item\models.py:62
+#: .\apps\userform\models.py:21 .\apps\userform\models.py:39
+msgid "liste"
+msgstr ""
+
+#: .\apps\item\models.py:30 .\apps\item\models.py:62
+#: .\apps\userform\models.py:21 .\apps\userform\models.py:39
+msgid "Listeleme Yetkisi"
+msgstr ""
+
+#: .\apps\item\models.py:31 .\apps\item\models.py:63
+#: .\apps\userform\models.py:22 .\apps\userform\models.py:40
+msgid "sil"
+msgstr ""
+
+#: .\apps\item\models.py:31 .\apps\item\models.py:63
+#: .\apps\userform\models.py:22 .\apps\userform\models.py:40
+msgid "Silme Yetkisi"
+msgstr ""
+
+#: .\apps\item\models.py:32 .\apps\item\models.py:64
+#: .\apps\userform\models.py:23 .\apps\userform\models.py:41
+msgid "ekle"
+msgstr ""
+
+#: .\apps\item\models.py:32 .\apps\item\models.py:64
+#: .\apps\userform\models.py:23 .\apps\userform\models.py:41
+msgid "Ekleme Yetkisi"
+msgstr ""
+
+#: .\apps\item\models.py:33 .\apps\item\models.py:65
+#: .\apps\userform\models.py:24 .\apps\userform\models.py:42
+msgid "guncelle"
+msgstr ""
+
+#: .\apps\item\models.py:33 .\apps\item\models.py:65
+#: .\apps\userform\models.py:24 .\apps\userform\models.py:42
+msgid "Güncelleme Yetkisi"
+msgstr ""
+
+#: .\apps\item\models.py:40
+msgid "Detay"
+msgstr ""
+
+#: .\apps\item\models.py:59 .\apps\item\models.py:60
+#: .\frontend\templates\partials\footer.html:12
+#: .\frontend\templates\partials\header.html:19
+#: .\frontend\templates\services.html:57
+msgid "Hizmetler"
+msgstr ""
+
+#: .\apps\userform\models.py:9 .\apps\userform\models.py:29
+#: .\frontend\templates\contacts.html:239
+msgid "Ad"
+msgstr ""
+
+#: .\apps\userform\models.py:10 .\apps\userform\models.py:30
+#: .\frontend\templates\contacts.html:245
+msgid "Soyad"
+msgstr ""
+
+#: .\apps\userform\models.py:11 .\apps\userform\models.py:31
+#: .\frontend\templates\contacts.html:249
+#: .\frontend\templates\partials\footer.html:25
+msgid "E-Posta"
+msgstr ""
+
+#: .\apps\userform\models.py:12 .\frontend\templates\partials\footer.html:22
+msgid "Adres"
+msgstr ""
+
+#: .\apps\userform\models.py:13 .\apps\userform\models.py:32
+#: .\frontend\templates\contacts.html:253
+#: .\frontend\templates\partials\footer.html:23
+msgid "Telefon"
+msgstr ""
+
+#: .\apps\userform\models.py:14
+msgid "Özgeçmiş"
+msgstr ""
+
+#: .\apps\userform\models.py:15 .\apps\userform\models.py:33
+#: .\frontend\templates\contacts.html:257 .\frontend\templates\index.html:303
+msgid "Mesaj"
+msgstr ""
+
+#: .\apps\userform\models.py:18 .\apps\userform\models.py:19
+#: .\frontend\templates\careers.html:23
+#: .\frontend\templates\partials\footer.html:14
+#: .\frontend\templates\partials\header.html:21
+msgid "Kariyer"
+msgstr ""
+
+#: .\apps\userform\models.py:36 .\apps\userform\models.py:37
+#: .\frontend\templates\contacts.html:23
+#: .\frontend\templates\partials\footer.html:15
+#: .\frontend\templates\partials\header.html:22
+msgid "İletişim"
+msgstr ""
+
+#: .\apps\userform\views.py:18
+msgid "Özgeçmiş formunuz elimize ulaşmıştır."
+msgstr ""
+
+#: .\apps\userform\views.py:21 .\apps\userform\views.py:39
+msgid "Hata! Lütfen Tekrar Deneyiniz."
+msgstr ""
+
+#: .\apps\userform\views.py:36
+msgid "Mesajınız elimize ulaşmıştır."
+msgstr ""
+
+#: .\business\settings.py:121
 msgid "Turkish"
 msgstr "اللغة التركية"
 
-#: .\business\settings.py:115
+#: .\business\settings.py:122
 msgid "English"
 msgstr "الإنجليزية"
 
-#: .\business\settings.py:116
+#: .\business\settings.py:123
 msgid "Arabic"
 msgstr "عربى"
+
+#: .\business\urls.py:35
+msgid "hizmetler/<slug:slug>"
+msgstr ""
+
+#: .\business\urls.py:36
+msgid "kurumsal/"
+msgstr ""
+
+#: .\business\urls.py:37
+msgid "kariyer/"
+msgstr ""
+
+#: .\business\urls.py:38
+msgid "iletisim/"
+msgstr ""
+
+#: .\business\urls.py:39
+msgid "rosetta/"
+msgstr ""
+
+#: .\frontend\templates\base.html:12 .\frontend\templates\careers.html:22
+#: .\frontend\templates\contacts.html:22
+#: .\frontend\templates\corporate.html:22 .\frontend\templates\index.html:27
+#: .\frontend\templates\index.html:58 .\frontend\templates\index.html:106
+#: .\frontend\templates\index.html:157
+#: .\frontend\templates\partials\header.html:14
+#: .\frontend\templates\services.html:22
+msgid "GFT Logistics"
+msgstr ""
+
+#: .\frontend\templates\careers.html:42
+msgid "Herkesin bir yolu, bir hikayesi vardır."
+msgstr ""
+
+#: .\frontend\templates\careers.html:43
+msgid "Senin hikayeni birlikte yazalım."
+msgstr ""
+
+#: .\frontend\templates\careers.html:49
+msgid ""
+"Ekibimize katılacak yetenekli ve yetkin kişileri arıyoruz. Sen de\n"
+"                                ekibimizin bir üyesi olmak istiyorsan başvuru formunu doldur. "
+msgstr ""
+
+#: .\frontend\templates\careers.html:85
+msgid "Gönder"
+msgstr ""
+
+#: .\frontend\templates\contacts.html:37
+msgid "GFT Lojistik ve Dış Ticaret Ltd. Şti.( Head Office)"
+msgstr ""
+
+#: .\frontend\templates\contacts.html:45
+#: .\frontend\templates\partials\footer.html:23
+msgid "+90 (212) 424 05 75"
+msgstr ""
+
+#: .\frontend\templates\contacts.html:46
+msgid "+90 212 424 05 95"
+msgstr ""
+
+#: .\frontend\templates\contacts.html:47
+msgid "+90 549 650 60 76"
+msgstr ""
+
+#: .\frontend\templates\contacts.html:56 .\frontend\templates\contacts.html:89
+#: .\frontend\templates\contacts.html:133
+#: .\frontend\templates\contacts.html:167
+#: .\frontend\templates\contacts.html:200
+#: .\frontend\templates\partials\footer.html:25
+msgid "gft@gftlogistics.com"
+msgstr ""
+
+#: .\frontend\templates\contacts.html:66
+#: .\frontend\templates\partials\footer.html:22
+msgid ""
+"Gürsel Mah. İmrahor Cad. Premier Kampüs Ofis A Blok,Kat:5, No:196 Kağıthane/"
+" İstanbul"
+msgstr ""
+
+#: .\frontend\templates\contacts.html:72
+msgid "GFT Lojistik ve Dış Ticaret Ltd. Şti.( Pendik Office)"
+msgstr ""
+
+#: .\frontend\templates\contacts.html:80
+msgid "+90 (216) 378 05 10"
+msgstr ""
+
+#: .\frontend\templates\contacts.html:99
+msgid "Orta Mah. Latife Hanım Sok. No : 14C Pendik / İstanbul"
+msgstr ""
+
+#: .\frontend\templates\contacts.html:115
+msgid "GFT Logistics LY ( Tripoli Office)"
+msgstr ""
+
+#: .\frontend\templates\contacts.html:123
+#: .\frontend\templates\contacts.html:157
+msgid "+218913278433"
+msgstr ""
+
+#: .\frontend\templates\contacts.html:124
+#: .\frontend\templates\contacts.html:158
+msgid "+218927278433"
+msgstr ""
+
+#: .\frontend\templates\contacts.html:143
+msgid ""
+"Tripoli Tower Office No:49B, Ground Floor – Tripoli – Libya. P.O Box 2626 "
+"Tripoli-Libya"
+msgstr ""
+
+#: .\frontend\templates\contacts.html:149
+msgid "GFT Logistics LY ( Misurata Office)"
+msgstr ""
+
+#: .\frontend\templates\contacts.html:177
+msgid ""
+"Al Sheikh St. Al Sallabi Building – First Floor, Suite # 1 Misurata – Libya."
+msgstr ""
+
+#: .\frontend\templates\contacts.html:183
+msgid "GFT Logistics LY ( Benghazi Office)"
+msgstr ""
+
+#: .\frontend\templates\contacts.html:191
+msgid "+218918074004"
+msgstr ""
+
+#: .\frontend\templates\contacts.html:210
+msgid "Zawia Refaya st. branch from Ahmed Mehdawi St. Benghazi"
+msgstr ""
+
+#: .\frontend\templates\contacts.html:235 .\frontend\templates\index.html:287
+msgid "İletişim Formu"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:23
+#: .\frontend\templates\partials\footer.html:11
+#: .\frontend\templates\partials\header.html:18
+msgid "Kurumsal"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:40
+msgid "Dünya Çapında "
+msgstr ""
+
+#: .\frontend\templates\corporate.html:41
+msgid "Acente Ağı"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:45
+msgid "Hakkımızda"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:46
+msgid "Ticaretin merkezi "
+msgstr ""
+
+#: .\frontend\templates\corporate.html:47 .\frontend\templates\index.html:135
+msgid "İstanbul"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:47
+msgid "’da kurulduk"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:49
+msgid ""
+"Onlarca yılın getirmiş olduğu deneyimimiz, sektöre olan tutkumuz ve\n"
+"                            yenilikçi yaklaşım tarzımız ile kurulduğumuz günden itibaren portföyümüzdeki firmalara\n"
+"                            hizmet sağlamaktan mutluluk duyuyoruz. "
+msgstr ""
+
+#: .\frontend\templates\corporate.html:52
+msgid ""
+"Deneyimli kadromuz ve dünya çapında acente ağlarımızla kara, deniz, hava\n"
+"                            ve demiryolu taşımacılığında sınırları aşan hizmetler\n"
+"                            veriyoruz.  "
+msgstr ""
+
+#: .\frontend\templates\corporate.html:55
+msgid ""
+"Ekonominin lokomotif unsurlarından olan ithalat ve ihracat yapan firmalar\n"
+"                            için ürün tedarik süreçlerini ve depolama hizmetlerini de kapsayan katma değerli çözümler\n"
+"                            sunuyoruz.  "
+msgstr ""
+
+#: .\frontend\templates\corporate.html:58
+msgid ""
+"Geniş coğrafi erişim sağlayan dünya çapındaki acente ağımızla,  operasyon\n"
+"                            gücümüzü daima artırıyoruz.  "
+msgstr ""
+
+#: .\frontend\templates\corporate.html:60
+msgid ""
+"Üstlendiğimiz hayati bağlantı görevinin müşterilerimize daha fazla değer\n"
+"                            katabilmesi için becerilerimizi daima geliştiriyoruz.  "
+msgstr ""
+
+#: .\frontend\templates\corporate.html:62
+msgid ""
+"Özelleştirilmiş üst düzey hizmetlerimizle müşterilerimizin işlerine değer\n"
+"                            katan ve onların güvenini kazanan bir çözüm sağlayıcı olmaktan gurur\n"
+"                            duyuyoruz.  "
+msgstr ""
+
+#: .\frontend\templates\corporate.html:77
+msgid "Vizyon"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:79
+msgid ""
+"‘Sektöre Değer Kat, Sınırları Aş’ mottomuz;\n"
+"                            müşterilerimizden ve acentelerimizden aldığımız güç ile lojistik ve dış ticaret ekosistemi\n"
+"                            içerisinde sürdürülebilir başarıyı ve memnuniyeti sağlama konusunda taahhüdümüzün temelini\n"
+"                            oluşturmaktadır.\n"
+"                        "
+msgstr ""
+
+#: .\frontend\templates\corporate.html:84
+msgid ""
+" Vizyonumuz, sürdürülebilir başarı ve memnuniyeti\n"
+"                            yıldan yıla artırmaktır.\n"
+"                        "
+msgstr ""
+
+#: .\frontend\templates\corporate.html:88
+msgid "Misyon"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:90
+msgid ""
+"Misyonumuz; sunduğumuz hızlı ve kaliteli çözümler ile\n"
+"                            sadece lojistik hizmeti üreten değil, müşterilerimizin ticari çözüm ortağı olarak hareket\n"
+"                            eden bir kurum olmak.    "
+msgstr ""
+
+#: .\frontend\templates\corporate.html:113 .\frontend\templates\index.html:252
+msgid "8"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:114 .\frontend\templates\index.html:253
+msgid "Özellik"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:116 .\frontend\templates\index.html:254
+msgid "Güçlü Operasyonlar İçin"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:122 .\frontend\templates\index.html:259
+msgid "6"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:123 .\frontend\templates\index.html:260
+msgid "Değer"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:125 .\frontend\templates\index.html:262
+msgid "En İyi Olmak İçin"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:131 .\frontend\templates\index.html:267
+msgid "7"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:132 .\frontend\templates\index.html:268
+msgid "Hizmet"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:134 .\frontend\templates\index.html:269
+msgid "Mutlu Müşteriler İçin"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:149
+#: .\frontend\templates\corporate.html:150
+msgid "DEĞERLERİMİZ"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:160
+msgid "Dürüstlük ve Güven"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:161
+msgid ""
+"Yaptığımız işe, birlikte çalıştığımız ekimize ve hizmet sunduğumuz "
+"müşterilerimize karşı olan dürüstlüğümüz organizasyon yapımızın temel "
+"unsurudur. Dünya çapında güven sağlamış güçlü acente ağımızla hareket "
+"etmenin sağladığı faydaya inanıyoruz. "
+msgstr ""
+
+#: .\frontend\templates\corporate.html:169
+msgid "Mükemmellik ve Kalite"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:170
+msgid ""
+"Özelleştirilmiş üst düzey hizmetlerimizde mükemmellik ve sürekli "
+"iyileştirmenin müşterilerimizin işlerine değer kattığına inanıyoruz. Süreç "
+"analizi, optimizasyon ve müşteri deneyimlerini baz alarak kaliteli hizmet "
+"anlayışımızı geliştiriyoruz.  "
+msgstr ""
+
+#: .\frontend\templates\corporate.html:178
+msgid "Müşteri Odaklı Olma"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:179
+msgid ""
+"Lojistik, depolama ve ürün tedarikinde hizmet verdiğimiz müşterilerimizin "
+"ihtiyaçlarını tam olarak anlamak, müşterilerimiz için değer sağlamak ve "
+"onların taleplerine kaliteli ve hızlı cevap vermek önceliğimizdir. "
+msgstr ""
+
+#: .\frontend\templates\corporate.html:187
+msgid "İnsana Saygı"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:188
+msgid ""
+"Yönetim ve hizmet anlayışımızın temelini insana saygı oluşturur. İletişimde "
+"şeffaf ve duyarlı davranırız. Her zaman değer verir ve can kulağıyla "
+"dinleriz. Açık fikirlilik, doğru iletişim ve saygı işimizden ayrı "
+"düşünülemez. "
+msgstr ""
+
+#: .\frontend\templates\corporate.html:196
+msgid "Sosyal Sorumluluk"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:197
+msgid ""
+"Çevreye, doğaya ve insana değer veren bir yaklaşımla hizmet sağlarız. "
+"Topluma ve çevremize karşı olan sorumluluğumuzun farkındayız. Daha iyi bir "
+"gelecek için daima katkı sunmaya çalışırız. "
+msgstr ""
+
+#: .\frontend\templates\corporate.html:205
+msgid "Etik Çalışma"
+msgstr ""
+
+#: .\frontend\templates\corporate.html:206
+msgid ""
+"Faaliyet gösterdiğimiz her coğrafyanın, her ülkenin yasalarına istisnasız "
+"uyarız. Etik kurallara, dürüstlük ilkelerine ve kültürel değerlere saygı "
+"gösteririz. Her zaman toplumumuza, insanımıza ve müşterimize karşı sorumlu "
+"davranırız. "
+msgstr ""
+
+#: .\frontend\templates\index.html:28
+msgid "Sektöre Değer Kat, "
+msgstr ""
+
+#: .\frontend\templates\index.html:28
+msgid "Sınırları Aş"
+msgstr ""
+
+#: .\frontend\templates\index.html:57
+msgid "HİZMETLERİMİZ"
+msgstr "خدماتنا"
+
+#: .\frontend\templates\index.html:58
+msgid "Hizmetlerimiz"
+msgstr "خدماتنا"
+
+#: .\frontend\templates\index.html:60 .\frontend\templates\index.html:106
+msgid "Tüm Hizmetler"
+msgstr ""
+
+#: .\frontend\templates\index.html:68
+msgid ""
+"Onlarca yılın getirmiş olduğu deneyimimiz, sektöre olan tutkumuz ve "
+"yenilikçi yaklaşım tarzımız ile kurulduğumuz günden itibaren portföyümüzdeki"
+" firmalara  hizmet sağlamaktan mutluluk duyuyoruz."
+msgstr ""
+
+#: .\frontend\templates\index.html:77
+msgid "Denizyolu Taşımacılığı"
+msgstr ""
+
+#: .\frontend\templates\index.html:84
+msgid "Karayolu Taşımacılığı"
+msgstr ""
+
+#: .\frontend\templates\index.html:93
+msgid "Havayolu Taşımacılığı"
+msgstr ""
+
+#: .\frontend\templates\index.html:101
+msgid "Demiryolu Taşımacılığı"
+msgstr ""
+
+#: .\frontend\templates\index.html:125
+msgid "100"
+msgstr ""
+
+#: .\frontend\templates\index.html:126
+msgid "'lerce"
+msgstr ""
+
+#: .\frontend\templates\index.html:128
+msgid "Lokasyon"
+msgstr ""
+
+#: .\frontend\templates\index.html:133
+msgid "GFT Logistics Hakkında"
+msgstr ""
+
+#: .\frontend\templates\index.html:134
+msgid "Ticaretin merkezi olan"
+msgstr ""
+
+#: .\frontend\templates\index.html:135
+msgid "’da kurulduk."
+msgstr ""
+
+#: .\frontend\templates\index.html:137
+msgid ""
+"Deneyimli kadromuz ve dünya çapında acente ağlarımızla kara, deniz, hava\n"
+"                            ve demiryolu taşımacılığında sınırları aşan hizmetler veriyoruz. "
+msgstr ""
+
+#: .\frontend\templates\index.html:139
+msgid ""
+"Ekonominin lokomotif unsurlarından olan ithalat ve ihracat yapan firmalar\n"
+"                            için ürün tedarik süreçlerini ve depolama hizmetlerini de kapsayan katma değerli çözümler\n"
+"                            sunuyoruz."
+msgstr ""
+
+#: .\frontend\templates\index.html:142
+msgid "Daha Fazla"
+msgstr ""
+
+#: .\frontend\templates\index.html:158
+msgid "Güçlü "
+msgstr ""
+
+#: .\frontend\templates\index.html:159 .\frontend\templates\index.html:160
+msgid "Özelliklerimiz"
+msgstr ""
+
+#: .\frontend\templates\index.html:170
+msgid "Geniş Acente Ağı"
+msgstr ""
+
+#: .\frontend\templates\index.html:179
+msgid "Deneyimli Ekipler"
+msgstr ""
+
+#: .\frontend\templates\index.html:188
+msgid "Kapıdan Kapıya Çözüm "
+msgstr ""
+
+#: .\frontend\templates\index.html:197
+msgid "Entegre Hizmet"
+msgstr ""
+
+#: .\frontend\templates\index.html:206
+msgid "Sürekli Gelişim"
+msgstr ""
+
+#: .\frontend\templates\index.html:216
+msgid "Müşteri Desteği"
+msgstr ""
+
+#: .\frontend\templates\index.html:225
+msgid "Müşteri Memnuniyeti"
+msgstr ""
+
+#: .\frontend\templates\index.html:234
+msgid "Güvenirlik"
+msgstr ""
+
+#: .\frontend\templates\index.html:290
+msgid "Adınız Soyadınız"
+msgstr ""
+
+#: .\frontend\templates\index.html:293
+msgid "E- Posta Adresiniz"
+msgstr ""
+
+#: .\frontend\templates\index.html:296
+msgid "Telefonunuz"
+msgstr ""
+
+#: .\frontend\templates\index.html:299
+msgid "Konu"
+msgstr ""
+
+#: .\frontend\templates\index.html:306
+msgid "Mesajı Gönder"
+msgstr ""
+
+#: .\frontend\templates\partials\footer.html:8
+msgid "Menü"
+msgstr ""
+
+#: .\frontend\templates\partials\footer.html:10
+#: .\frontend\templates\partials\header.html:17
+#: .\frontend\templates\partials\header.html:46
+msgid "Anasayfa"
+msgstr ""
+
+#: .\frontend\templates\partials\footer.html:13
+#: .\frontend\templates\partials\header.html:20
+msgid "Online İşlemler"
+msgstr ""
+
+#: .\frontend\templates\partials\footer.html:20
+msgid "İletişim Bilgileri"
+msgstr ""
+
+#: .\frontend\templates\partials\footer.html:24
+msgid "+90 (212) 424 05 95"
+msgstr ""
+
+#: .\frontend\templates\partials\footer.html:26
+msgid "Çalışma Saatleri"
+msgstr ""
+
+#: .\frontend\templates\partials\footer.html:26
+msgid "08:30 - 17:30"
+msgstr ""
+
+#: .\frontend\templates\partials\footer.html:63
+msgid "Şartlar ve koşullar"
+msgstr ""
+
+#: .\frontend\templates\partials\footer.html:63
+msgid "Gizlilik Politikası"
+msgstr ""
+
+#: .\frontend\templates\partials\footer.html:64
+msgid "Çerezler"
+msgstr ""
+
+#: .\frontend\templates\partials\footer.html:67
+msgid "© 2020 GFT Logistics. All rights reserved"
+msgstr ""
+
+#: .\frontend\templates\partials\footer.html:67
+msgid "MAMUT"
+msgstr ""
+
+#: .\frontend\templates\partials\footer.html:67
+msgid " tarafından geliştirilmiştir. "
+msgstr ""
+
+#: .\frontend\templates\partials\header.html:50
+msgid "KURUMSAL"
+msgstr ""
+
+#: .\frontend\templates\partials\header.html:54
+msgid "HİZMETLER"
+msgstr ""
+
+#: .\frontend\templates\partials\header.html:62
+msgid "ONLİNE İŞLEMLER"
+msgstr ""
+
+#: .\frontend\templates\partials\header.html:66
+msgid "KARİYER"
+msgstr ""
+
+#: .\frontend\templates\partials\header.html:71
+msgid "İLETİŞİM"
+msgstr ""
+
+#: .\frontend\templates\partials\header.html:84
+msgid "Tr"
+msgstr ""
+
+#: .\frontend\templates\partials\header.html:86
+msgid "Türkçe"
+msgstr ""
+
+#: .\frontend\templates\partials\header.html:87
+msgid "İngilizce"
+msgstr ""
+
+#: .\frontend\templates\partials\header.html:88
+msgid "Arapça"
+msgstr ""
