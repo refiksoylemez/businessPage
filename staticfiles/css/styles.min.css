@@ -8364,7 +8364,6 @@ body.compensate-for-scrollbar {
 }
 
 body {
-    font-family: Inter, sans-serif;
     color: #414a53;
     min-height: 100vh;
     overflow-x: hidden;
@@ -8807,7 +8806,7 @@ section.section {
     color: transparent;
     font-size: 110px;
     font-weight: 700;
-    letter-spacing: -.050em;
+
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgba(255, 255, 255, .35);
     position: absolute;
@@ -14914,7 +14913,7 @@ p {
     font-size: 200px;
     line-height: .85;
     font-weight: 700;
-    letter-spacing: -.050em;
+
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: rgba(255, 255, 255, .35);
     position: absolute;
