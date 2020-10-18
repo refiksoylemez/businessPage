@@ -1,104 +1,141 @@
 {% load i18n %}
 {% load static %}
 
-  <!-- menu dropdown start-->
-  <div class="menu-dropdown">
+<!-- menu dropdown start-->
+<div class="menu-dropdown">
 
-      <div class="menu-dropdown__inner" data-value="screen-one">
-          <div class="screen screen--sub">
-              <div class="screen__heading">
-                  <h6 class="screen__back">
-                      <svg class="icon">
-                          <use xlink:href="#chevron-left"></use>
-                      </svg>
-                      <span>{% trans "GFT Logistics" %}</span>
-                  </h6>
-              </div>
-              <div class="screen__item item--active"><a class="screen__link" href="/">{% trans "Anasayfa" %}</a></div>
-              <div class="screen__item"><a class="screen__link" href="{% url 'corporate' %}">{% trans "Kurumsal" %}</a></div>
-              <div class="screen__item"><a class="screen__link" href="#">{% trans "Hizmetler" %}</a></div>
-              <div class="screen__item"><a class="screen__link" href="{% url 'online' %}">{% trans "Online İşlemler" %}</a></div>
-              <div class="screen__item"><a class="screen__link" href="{% url 'careers' %}">{% trans "Kariyer" %}</a></div>
-              <div class="screen__item"><a class="screen__link" href="{% url 'contacts' %}">{% trans "İletişim" %}</a></div>
+    <div class="menu-dropdown__inner" data-value="screen-one">
+        <div class="screen screen--sub">
+            <div class="screen__heading">
+                <h6 class="screen__back">
+                   <a href="/"> <svg class="icon">
+                        <use xlink:href="#chevron-left"></use>
+                    </svg></a>
+                    <span>{% trans "GFT Logistics" %}</span>
+                </h6>
+            </div>
+            <div class="screen__item item--active"><a class="screen__link" href="/">{% trans "Anasayfa" %}</a></div>
+            <div class="screen__item"><a class="screen__link" href="{% url 'corporate' %}">{% trans "Kurumsal" %}</a>
+            </div>
 
-          </div>
-      </div>
+            {% for hizmet in menuList %}
+                <div class="screen__item"><a class="screen__link"
+                                             href="{% url 'services' hizmet.slug %}"> {{ hizmet }} </a></div>
 
-  </div>
-  <!-- menu dropdown end-->
-  <!-- header start-->
-  <header class="page-header_3">
-      <div class="container-fluid">
-          <div class="row align-items-center">
-              <div class="col-8 col-md-6 col-lg-3 d-flex align-items-center">
-                  <div class="hamburger d-none d-md-inline-block hamburger--white">
-                      <div class="hamburger-inner"></div>
-                  </div>
-                  <div class="page-header__logo logo--white"><a href="/"><img
-                          src="{% static 'img/logo_white.png' %}" alt="logo"/></a></div>
-                  <div class="page-header__logo logo--dark"><a href="/"><img
-                          src="{% static 'img/logo_black.png' %}" alt="logo"/></a></div>
-              </div>
-              <div class="col-lg-7 d-none d-lg-flex ">
-                  <!-- main menu start-->
-                  <ul class="main-menu main-menu--white">
-                      <li class="main-menu__item main-menu__item--has-child main-menu__item--active"><a
-                              class="main-menu__link" href="/"><span>{% trans "Anasayfa" %}</span></a>
+            {% endfor %}
 
-                      </li>
-                      <li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link"
-                                                                                href="{% url 'corporate' %}"><span>{% trans "KURUMSAL" %}</span></a>
+            <div class="screen__item"><a class="screen__link"
+                                         href="{% url 'online' %}">{% trans "Online İşlemler" %}</a></div>
+            <div class="screen__item"><a class="screen__link" href="{% url 'careers' %}">{% trans "Kariyer" %}</a></div>
+            <div class="screen__item"><a class="screen__link" href="{% url 'contacts' %}">{% trans "İletişim" %}</a>
+            </div>
 
-                      </li>
-                      <li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link"
-                                                                                href="javascript:void(0);"><span>{% trans "HİZMETLER" %}</span></a>
-                          <ul class="main-menu__sub-list">
-                              {% for hizmet in menuList %}
-                                  <li><a href="{% url 'services' hizmet.slug %}"><span>{{ hizmet}}</span></a></li>
-                              {% endfor %}
-                          </ul>
-                      </li>
-                      <li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link"
-                                                                                href="{% url 'online' %}"><span>{% trans "ONLİNE İŞLEMLER" %}</span></a>
+        </div>
+    </div>
 
-                      </li>
-                      <li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link"
-                                                                                href="{% url 'careers' %}"><span>{% trans "KARİYER" %}</span></a>
+</div>
+<!-- menu dropdown end-->
+<!-- header start-->
+<header class="page-header_3">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-8 col-md-6 col-lg-3 d-flex align-items-center">
+                <div class="hamburger d-none d-md-inline-block hamburger--white">
+                    <div class="hamburger-inner"></div>
+                </div>
+                <div class="page-header__logo logo--white"><a href="/"><img
+                        src="{% static 'img/logo_white.png' %}" alt="logo"/></a></div>
+                <div class="page-header__logo logo--dark"><a href="/"><img
+                        src="{% static 'img/logo_black.png' %}" alt="logo"/></a></div>
+            </div>
+            <div class="col-lg-7 d-none d-lg-flex ">
+                <!-- main menu start-->
+                <ul class="main-menu main-menu--white">
+                    <li class="main-menu__item main-menu__item--has-child
 
-                          <!-- sub menu end-->
-                      </li>
-                      <li class="main-menu__item main-menu__item--has-child"><a class="main-menu__link"
-                                                                                href="{% url 'contacts' %}"><span>{% trans "İLETİŞİM" %}</span></a>
-
-                      </li>
-
-                  </ul>
-                  <!-- main menu end-->
-              </div>
-              <div class="col-4 col-md-6 col-lg-2 d-flex justify-content-end align-items-center">
-                  <div class="lang-block">
+                     {% if request.resolver_match.url_name == "mainPage" %} main-menu__item--active{% endif %}
 
 
-                      <!-- lang select start-->
-                      <ul class="lang-select lang-select--white">
-                          <li class="lang-select__item lang-select__item--active"><span>{% trans "Tr" %}</span>
-                              <ul class="lang-select__sub-list">
-                                  <li><a href="/tr">{% trans "Türkçe" %}</a></li>
-                                  <li><a href="/en">{% trans "İngilizce" %}</a></li>
-                                  <li><a href="/ar">{% trans "Arapça" %}</a></li>
 
-                              </ul>
-                          </li>
-                      </ul>
-                      <!-- lang select end-->
-                  </div>
 
-                  <div class="hamburger d-inline-block d-md-none hamburger--white">
-                      <div class="hamburger-inner"></div>
-                  </div>
-                  <!-- menu-trigger end-->
-              </div>
-          </div>
-      </div>
-  </header>
-  <!-- header end-->
+
+"><a
+                            class="main-menu__link" href="{% url 'mainPage' %}"><span>{% trans "Anasayfa" %}</span></a>
+
+                    </li>
+                    <li class="main-menu__item main-menu__item--has-child
+          {% if request.resolver_match.url_name == "corporate" %} main-menu__item--active{% endif %}
+
+
+"><a class="main-menu__link"
+                                                                              href="{% url 'corporate' %}"><span>{% trans "KURUMSAL" %}</span></a>
+
+                    </li>
+                    <li class="main-menu__item main-menu__item--has-child
+          {% if request.resolver_match.url_name == "services" %} main-menu__item--active{% endif %}
+
+
+"><a class="main-menu__link"
+                                                                              href="javascript:void(0);"><span>{% trans "HİZMETLER" %}</span></a>
+                        <ul class="main-menu__sub-list">
+                            {% for hizmet in menuList %}
+                                <li><a href="{% url 'services' hizmet.slug %}"><span>{{ hizmet }}</span></a></li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                    <li class="main-menu__item main-menu__item--has-child
+          {% if request.resolver_match.url_name == "online" %} main-menu__item--active{% endif %}
+
+
+"><a class="main-menu__link"
+                                                                              href="{% url 'online' %}"><span>{% trans "ONLİNE İŞLEMLER" %}</span></a>
+
+                    </li>
+                    <li class="main-menu__item main-menu__item--has-child
+          {% if request.resolver_match.url_name == "careers" %} main-menu__item--active{% endif %}
+
+
+"><a class="main-menu__link"
+                                                                              href="{% url 'careers' %}"><span>{% trans "KARİYER" %}</span></a>
+
+                        <!-- sub menu end-->
+                    </li>
+                    <li class="main-menu__item main-menu__item--has-child
+          {% if request.resolver_match.url_name == "contacts" %} main-menu__item--active{% endif %}
+
+
+"><a class="main-menu__link"
+                                                                              href="{% url 'contacts' %}"><span>{% trans "İLETİŞİM" %}</span></a>
+
+                    </li>
+
+                </ul>
+                <!-- main menu end-->
+            </div>
+            <div class="col-4 col-md-6 col-lg-2 d-flex justify-content-end align-items-center">
+                <div class="lang-block">
+
+
+                    <!-- lang select start-->
+                    <ul class="lang-select lang-select--white">
+                        <li class="lang-select__item lang-select__item--active"><span>{% trans "Tr" %}</span>
+                            <ul class="lang-select__sub-list">
+                                <li><a href="/tr">{% trans "Türkçe" %}</a></li>
+                                <li><a href="/en">{% trans "İngilizce" %}</a></li>
+                                <li><a href="/ar">{% trans "Arapça" %}</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- lang select end-->
+                </div>
+
+                <div class="hamburger d-inline-block d-md-none hamburger--white">
+                    <div class="hamburger-inner"></div>
+                </div>
+                <!-- menu-trigger end-->
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header end-->

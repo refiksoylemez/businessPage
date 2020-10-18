@@ -73,7 +73,7 @@
                         <div class="count-item">
                             <div class="count-item__img"><img src="{% static 'img/front-serv_2.png' %}" alt="icon"/>
                             </div>
-                            <h6 class="count-item__title"><span class="count-item__count">01</span>
+                            <h6 class="count-item__title"><span class="count-item__count" style="color: #d9d9d9">01</span>
                                 <span>{% trans "Denizyolu Taşımacılığı" %}</span></h6>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                         <div class="count-item">
                             <div class="count-item__img"><img src="{% static 'img/front-serv_1.png' %}" alt="icon"/>
                             </div>
-                            <h6 class="count-item__title"><span class="count-item__count">02</span> <span>{% trans "Karayolu Taşımacılığı" %}</span>
+                            <h6 class="count-item__title"><span class="count-item__count" style="color: #d9d9d9">02</span> <span>{% trans "Karayolu Taşımacılığı" %}</span>
                             </h6>
                         </div>
                     </div>
@@ -89,7 +89,7 @@
                         <div class="count-item">
                             <div class="count-item__img"><img src="{% static 'img/front-serv_3.png' %}" alt="icon"/>
                             </div>
-                            <h6 class="count-item__title"><span class="count-item__count">03</span>
+                            <h6 class="count-item__title"><span class="count-item__count" style="color: #d9d9d9">03</span>
                                 <span>{% trans "Havayolu Taşımacılığı" %}</span></h6>
                         </div>
                     </div>
@@ -97,7 +97,7 @@
                         <div class="count-item">
                             <div class="count-item__img"><img src="{% static 'img/front-serv_4.png' %}" alt="icon"/>
                             </div>
-                            <h6 class="count-item__title"><span class="count-item__count">04</span>
+                            <h6 class="count-item__title"><span class="count-item__count" style="color: #d9d9d9">04</span>
                                 <span>{% trans "Demiryolu Taşımacılığı" %}</span></h6>
                         </div>
                     </div>
@@ -123,9 +123,9 @@
                         <div class="counter counter--filled" style="background-color: #ee2737 ">
                             <div class="counter__top"><span
                                     class="js-counter counter__count">{% trans "100" %}</span><span
-                                    class="counter__subject">{% trans "'lerce" %}</span></div>
+                                    class="counter__subject" >{% trans "'lerce" %}</span></div>
                             <div class="counter__lower"><span
-                                    class="counter__details" style="color: white">{% trans "Lokasyon" %}</span></div>
+                                    class="counter__details" style="color: white; font-size: 40px">{% trans "Lokasyon" %}</span></div>
                         </div>
                     </div>
                     <div class="col-xl-7">
@@ -139,7 +139,7 @@
                         <p>{% blocktranslate %}Ekonominin lokomotif unsurlarından olan ithalat ve ihracat yapan firmalar
                             için ürün tedarik süreçlerini ve depolama hizmetlerini de kapsayan katma değerli çözümler
                             sunuyoruz.{% endblocktranslate %}</p><a
-                            class="button button--white" href="#"><span>{% trans "Daha Fazla" %}</span>
+                            class="button button--white" href="{% url 'corporate' %}"><span>{% trans "Daha Fazla" %}</span>
                         <svg class="icon">
                             <use xlink:href="#arrow"></use>
                         </svg>
@@ -231,7 +231,7 @@
                             <div class="icon-item__img">
                                 <img src="{% static 'img/guvenirlik.png' %}" alt="icon"/>
                             </div>
-                            <h6 class="icon-item__title">{% trans "Güvenirlik" %}</h6>
+                            <h6 class="icon-item__title">{% trans "Güvenilirlik" %}</h6>
 
                         </div>
                     </div>

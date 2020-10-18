@@ -13141,7 +13141,7 @@ p {
 }
 
 .counter__count, .counter__subject {
-    display: inline-block;
+
     letter-spacing: -.050em
 }
 
@@ -13156,7 +13156,7 @@ p {
 
 @media only screen and (min-width: 1200px) {
     .counter--filled {
-        padding: 47px 50px 58px 50px
+        padding: 47px 5px 58px 50px
     }
 }
 

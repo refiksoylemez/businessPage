@@ -1,73 +1,78 @@
 {% load i18n %}
 {% load static %}
-    <!-- footer start-->
-    <footer class="page-footer"><img class="section--bg b0 r0" src="{% static 'img/footer-bg.png' %}" alt="bg"/>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <h6 class="page-footer__title title--white">{% trans "Hizmetler" %}</h6>
-                    <ul class="page-footer__menu list--reset">
+<!-- footer start-->
+<footer class="page-footer"><img class="section--bg b0 r0" src="{% static 'img/footer-bg.png' %}" alt="bg"/>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <h6 class="page-footer__title title--white">{% trans "Hizmetler" %}</h6>
+                <ul class="page-footer__menu list--reset">
+                    {% for hizmet in menuList %}
 
-                        <li><a href="/">{% trans "Anasayfa" %}</a></li>
-                        <li><a href="{% url 'corporate' %}">{% trans "Kurumsal" %}</a></li>
-                        <li><a href="#">{% trans "Hizmetler" %}</a></li>
-                        <li><a href="#">{% trans "Online İşlemler" %}</a></li>
-                        <li><a href="{% url 'careers' %}">{% trans "Kariyer" %}</a></li>
-                        <li><a href="{% url 'contacts' %}">{% trans "İletişim" %}</a></li>
+                        <li><a href="{% url 'services' hizmet.slug %}"> {{ hizmet }} </a></li>
 
-                    </ul>
-                </div>
-                <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 top-40 top-md-0">
-                    <h6 class="page-footer__title title--white">{% trans "İletişim Bilgileri" %}</h6>
-                    <div class="page-footer__details">
-                        <p><strong>{% trans "Adres" %}:</strong> <span>{% trans "Gürsel Mah. İmrahor Cad. Premier Kampüs Ofis A Blok,Kat:5, No:196 Kağıthane/ İstanbul" %}</span></p>
-                        <p><strong>{% trans "Telefon" %}:</strong> <a href="#">{% trans "+90 (212) 424 05 75" %}</a> <a
-                                href="#">{% trans "+90 (212) 424 05 95" %}</a></p>
-                        <p><strong>{% trans "E-Posta" %}:</strong> <a href="#">{% trans "gft@gftlogistics.com" %}</a></p>
-                        <p><strong>{% trans "Çalışma Saatleri" %}:</strong> <span>{% trans "08:30 - 17:30" %}</span></p>
-                    </div>
-                </div>
-                <div class="col-lg-3 d-flex flex-column justify-content-between align-items-sm-center align-items-lg-end top-40 top-lg-0">
-                    <div class="page-footer__logo"><a href="/"><img src="{% static 'img/logo_white.png' %}" alt="logo"/></a>
-                    </div>
-                    <ul class="socials list--reset">
-                        <li class="socials__item"><a class="socials__link" href="#">
-                            <svg class="icon">
-                                <use xlink:href="#youtube"></use>
-                            </svg>
-                        </a></li>
-                        <li class="socials__item"><a class="socials__link" href="#">
-                            <svg class="icon">
-                                <use xlink:href="#facebook"></use>
-                            </svg>
-                        </a></li>
-                        <li class="socials__item"><a class="socials__link" href="#">
-                            <svg class="icon">
-                                <use xlink:href="#twitter"></use>
-                            </svg>
-                        </a></li>
-                        <li class="socials__item"><a class="socials__link" href="#">
-                            <svg class="icon">
-                                <use xlink:href="#linkedin"></use>
-                            </svg>
-                        </a></li>
-                        <li class="socials__item"><a class="socials__link" href="#">
-                            <svg class="icon">
-                                <use xlink:href="#inst"></use>
-                            </svg>
-                        </a></li>
-                    </ul>
+
+                    {% endfor %}
+
+
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 top-40 top-md-0">
+                <h6 class="page-footer__title title--white">{% trans "İletişim Bilgileri" %}</h6>
+                <div class="page-footer__details">
+                    <p><strong>{% trans "Adres" %}:</strong>
+                        <span>{% trans "Gürsel Mah. İmrahor Cad. Premier Kampüs Ofis A Blok,Kat:5, No:196 Kağıthane/ İstanbul" %}</span>
+                    </p>
+                    <p><strong>{% trans "Telefon" %}:</strong> <a href="#">{% trans "+90 (212) 424 05 75" %}</a> <a
+                            href="#">{% trans "+90 (212) 424 05 95" %}</a></p>
+                    <p><strong>{% trans "E-Posta" %}:</strong> <a href="#">{% trans "gft@gftlogistics.com" %}</a></p>
+                    <p><strong>{% trans "Çalışma Saatleri" %}:</strong> <span>{% trans "08:30 - 17:30" %}</span></p>
                 </div>
             </div>
-            <div class="row top-50">
-                <div class="col-lg-6 text-sm-center text-lg-left">
-                    <div class="page-footer__privacy"><a href="#">{% trans "Şartlar ve koşullar" %}</a><a href="#">{% trans "Gizlilik Politikası" %}</a><a
-                            href="#">{% trans "Çerezler" %}</a></div>
+            <div class="col-lg-3 d-flex flex-column justify-content-between align-items-sm-center align-items-lg-end top-40 top-lg-0">
+                <div class="page-footer__logo"><a href="/"><img src="{% static 'img/logo_white.png' %}" alt="logo"/></a>
                 </div>
-                <div class="col-lg-6 text-sm-center text-lg-right">
-                    <div class="page-footer__copyright">{% trans "© 2020 GFT Logistics. All rights reserved" %} <a href="http://mamut.ist/" target="_blank">{% trans "MAMUT" %}</a> {% trans " tarafından geliştirilmiştir. " %} </div>
-                </div>
+                <ul class="socials list--reset">
+                    <li class="socials__item"><a class="socials__link" href="#">
+                        <svg class="icon">
+                            <use xlink:href="#youtube"></use>
+                        </svg>
+                    </a></li>
+                    <li class="socials__item"><a class="socials__link" href="#">
+                        <svg class="icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a></li>
+                    <li class="socials__item"><a class="socials__link" href="#">
+                        <svg class="icon">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a></li>
+                    <li class="socials__item"><a class="socials__link" href="#">
+                        <svg class="icon">
+                            <use xlink:href="#linkedin"></use>
+                        </svg>
+                    </a></li>
+                    <li class="socials__item"><a class="socials__link" href="#">
+                        <svg class="icon">
+                            <use xlink:href="#inst"></use>
+                        </svg>
+                    </a></li>
+                </ul>
             </div>
         </div>
-    </footer>
-    <!-- footer end-->
+        <div class="row top-50">
+            <div class="col-lg-6 text-sm-center text-lg-left">
+                <div class="page-footer__privacy"><a href="#">{% trans "Şartlar ve koşullar" %}</a><a
+                        href="#">{% trans "Gizlilik Politikası" %}</a><a
+                        href="#">{% trans "Çerezler" %}</a></div>
+            </div>
+            <div class="col-lg-6 text-sm-center text-lg-right">
+                <div class="page-footer__copyright">{% trans "© 2020 GFT Logistics. All rights reserved" %} <a
+                        href="http://mamut.ist/"
+                        target="_blank">{% trans "MAMUT" %}</a> {% trans " tarafından geliştirilmiştir. " %} </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer end-->
