@@ -2,26 +2,21 @@
 {% load i18n %}
 {% load static %}
 {% block extra_css %}
-<style>
-video {
-  width: 100%;
-  height: auto;
-}
-</style>
+ 
 {% endblock extra_css %}
 {% block content %}
     <main class="main">
         <!-- promo start-->
         <div class="promo">
             <div class="promo-slider">
-                <div class="promo-slider__item" style="height: 10%" >
+                <div class="promo-slider__item"  >
                     <div class=""   ></div>
-                    <video id="videoid"   playsinline="playsinline"  autoplay="autoplay" muted="muted" loop="loop">
+                    <video id="videoid"  height="1100px"  playsinline="playsinline"  autoplay="autoplay" muted="muted" loop="loop">
                         <source   src="{% static 'img/hero_video_filter1_2.mp4' %}" type="video/mp4"
                                 media="(min-width: 992px)">
                     </video>
 
-                    <div class="align-container" style="margin-top: -50%;">
+                    <div class="align-container" style="margin-top: -992px;">
                         <div class="align-container__item">
                             <div class="container">
                                 <div class="row">
@@ -56,7 +51,7 @@ video {
         <!-- promo end-->
 
         <!-- section start-->
-        <section class="section d-block d-md-none" style="margin-top:-40%">
+        <section class="section"    >
             <div class="container">
                 <div class="row bottom-70">
                     <div class="col-lg-4">
@@ -75,7 +70,7 @@ video {
                     </div>
                 </div>
                 <div class="row offset-50">
-                    <div class="col-sm-6 col-xl-3">
+                    <div class="col-6 col-md-3 col-xl-3">
                         <div class="count-item">
                             <div class="count-item__img"><img src="{% static 'img/front-serv_2.png' %}" alt="icon"/>
                             </div>
@@ -83,7 +78,7 @@ video {
                                 <span>{% trans "Denizyolu Taşımacılığı" %}</span></h6>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-xl-3">
+                    <div class="col-6 col-md-3 col-xl-3">
                         <div class="count-item">
                             <div class="count-item__img"><img src="{% static 'img/front-serv_1.png' %}" alt="icon"/>
                             </div>
@@ -91,7 +86,7 @@ video {
                             </h6>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-xl-3">
+                    <div class="col-6 col-md-3 col-xl-3">
                         <div class="count-item">
                             <div class="count-item__img"><img src="{% static 'img/front-serv_3.png' %}" alt="icon"/>
                             </div>
@@ -99,7 +94,7 @@ video {
                                 <span>{% trans "Havayolu Taşımacılığı" %}</span></h6>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-xl-3">
+                    <div class="col-6 col-md-3 col-xl-3">
                         <div class="count-item">
                             <div class="count-item__img"><img src="{% static 'img/front-serv_4.png' %}" alt="icon"/>
                             </div>
@@ -118,69 +113,7 @@ video {
             </div>
         </section>
         <!-- section end-->
-        <!-- section start-->
-        <section class="section d-none d-md-block" style="margin-top:-10%">
-            <div class="container">
-                <div class="row bottom-70">
-                    <div class="col-lg-4">
-                        <div class="heading bottom-40"><span class="heading__pre-title">{% trans "HİZMETLERİMİZ" %}</span>
-                            <h3 class="heading__title">{% trans "GFT Logistics" %}</h3><span class="heading__layout">{% trans "Hizmetlerimiz" %}</span>
-                        </div>
-                        <a class="button button--green d-none d-lg-inline-block" href="#" style="border-color: #ee2737"><span>{% trans "Tüm Hizmetler" %}</span>
-                            <svg class="icon">
-                                <use xlink:href="#arrow"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="col-lg-8">
 
-                        <p class="bottom-0" style="margin-top: 15%">{% blocktranslate %}Onlarca yılın getirmiş olduğu deneyimimiz, sektöre olan tutkumuz ve yenilikçi yaklaşım tarzımız ile kurulduğumuz günden itibaren portföyümüzdeki firmalara  hizmet sağlamaktan mutluluk duyuyoruz.{% endblocktranslate  %}</p>
-                    </div>
-                </div>
-                <div class="row offset-50">
-                    <div class="col-sm-6 col-xl-3">
-                        <div class="count-item">
-                            <div class="count-item__img"><img src="{% static 'img/front-serv_2.png' %}" alt="icon"/>
-                            </div>
-                            <h6 class="count-item__title"><span class="count-item__count" style="color: #d9d9d9">01</span>
-                                <span>{% trans "Denizyolu Taşımacılığı" %}</span></h6>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-xl-3">
-                        <div class="count-item">
-                            <div class="count-item__img"><img src="{% static 'img/front-serv_1.png' %}" alt="icon"/>
-                            </div>
-                            <h6 class="count-item__title"><span class="count-item__count" style="color: #d9d9d9">02</span> <span>{% trans "Karayolu Taşımacılığı" %}</span>
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-xl-3">
-                        <div class="count-item">
-                            <div class="count-item__img"><img src="{% static 'img/front-serv_3.png' %}" alt="icon"/>
-                            </div>
-                            <h6 class="count-item__title"><span class="count-item__count" style="color: #d9d9d9">03</span>
-                                <span>{% trans "Havayolu Taşımacılığı" %}</span></h6>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-xl-3">
-                        <div class="count-item">
-                            <div class="count-item__img"><img src="{% static 'img/front-serv_4.png' %}" alt="icon"/>
-                            </div>
-                            <h6 class="count-item__title"><span class="count-item__count" style="color: #d9d9d9">04</span>
-                                <span>{% trans "Demiryolu Taşımacılığı" %}</span></h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="row top-70 d-flex d-lg-none">
-                    <div class="col-12 text-center"><a class="button button--green" href="#"><span>{% trans "GFT Logistics" %}{% trans "Tüm Hizmetler" %}</span>
-                        <svg class="icon">
-                            <use xlink:href="#arrow"></use>
-                        </svg>
-                    </a></div>
-                </div>
-            </div>
-        </section>
-        <!-- section end-->
         <!-- section start-->
         <section class="section front-about">
             <div class="front-about__bg"><img class="section--bg t50 r0" src="{% static 'img/testimonials-bg.png' %}"
@@ -231,7 +164,7 @@ video {
                     </div>
                 </div>
                 <div class="row offset-50">
-                    <div class="col-sm-3 col-lg-3">
+                    <div class="col-lg-3 col-6">
                         <div class="icon-item">
                             <div class="icon-item__img ">
                                 <img src="{% static 'img/Geniş-Acenta-Agi.png' %}" alt="icon"/>
@@ -240,7 +173,7 @@ video {
 
                         </div>
                     </div>
-                    <div class="col-sm-3 col-lg-3">
+                    <div class="col-lg-3 col-6">
                         <div class="icon-item">
                             <div class="icon-item__img">
                                 <img src="{% static 'img/Deneyimli-Ekipler.png' %}" alt="icon"/>
@@ -249,7 +182,7 @@ video {
 
                         </div>
                     </div>
-                  <div class="col-sm-3 col-lg-3">
+                  <div class="col-lg-3 col-6">
                         <div class="icon-item">
                             <div class="icon-item__img">
                                 <img src="{% static 'img/Kapidan-Kapiya-cozum.png' %}" alt="icon"/>
@@ -258,7 +191,7 @@ video {
 
                         </div>
                     </div>
-                     <div class="col-sm-3 col-lg-3">
+                     <div class="col-lg-3 col-6">
                         <div class="icon-item">
                             <div class="icon-item__img">
                                 <img src="{% static 'img/Entegre-Hizmet.png' %}" alt="icon"/>
@@ -267,7 +200,7 @@ video {
 
                         </div>
                     </div>
-                     <div class="col-sm-3 col-lg-3">
+                     <div class="col-lg-3 col-6">
                         <div class="icon-item">
                             <div class="icon-item__img">
                                 <img src="{% static 'img/surekli_gelisim.png' %}" alt="icon"/>
@@ -277,7 +210,7 @@ video {
                         </div>
                     </div>
 
-                     <div class="col-sm-3 col-lg-3">
+                     <div class="col-lg-3 col-6">
                         <div class="icon-item">
                             <div class="icon-item__img">
                                  <img src="{% static 'img/Müsteri-Destegi.png' %}" alt="icon"/>
@@ -286,7 +219,7 @@ video {
 
                         </div>
                     </div>
-                    <div class="col-sm-3 col-lg-3">
+                    <div class="col-lg-3 col-6">
                         <div class="icon-item">
                             <div class="icon-item__img">
                                 <img src="{% static 'img/Musteri-Memnuniyeti.png' %}" alt="icon"/>
@@ -295,7 +228,7 @@ video {
 
                         </div>
                     </div>
-                         <div class="col-sm-3 col-lg-3">
+                         <div class="col-lg-3 col-6">
                         <div class="icon-item">
                             <div class="icon-item__img">
                                 <img src="{% static 'img/guvenirlik.png' %}" alt="icon"/>
